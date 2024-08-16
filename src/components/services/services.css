@@ -1,0 +1,90 @@
+.services-section {
+    background-color: #f8f8f8;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in one line */
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.service {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.services-section h2 {
+    font-size: 2.5rem; /* Adjusted font size */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem; /* Spacing below the heading */
+}
+
+.services-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem; /* Spacing below the paragraph */
+}
+
+.title_decoration {
+    background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
+    color: transparent;
+    margin: 1rem auto; /* Centered decoration */
+}
+
+.idea-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.idea-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.yes-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #eb865b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+}
+
+.yes-button:hover {
+    background-color: #f94521;
+}
+
+/* Responsive layout adjustments */
+@media screen and (max-width: 768px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards in one line */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-container {
+        grid-template-columns: 1fr; /* 1 card in one line */
+    }
+}

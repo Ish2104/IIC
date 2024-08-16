@@ -1,0 +1,155 @@
+/* 
+
+.team_main {
+  
+
+    width: 100%;
+    background-color: #f8f8f8; 
+    border-radius: 0px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-top: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+   
+
+}
+
+.team_section {
+   
+   
+   
+    padding-top: 0rem;
+    padding-bottom: 6rem;
+    margin-bottom: 10rem;
+}
+
+.team_section h2 {
+    font-size: 2rem;
+    color: #333; 
+    margin-bottom: 1rem; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .team_section {
+        padding: 1.5rem;
+    }
+
+    .title_decoration {
+        width: 50vw; 
+    }
+}
+
+.title_decoration {
+    width: 35vh;
+    height: 2.5rem;
+    background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
+    color: transparent;
+  }
+   */
+
+
+   /* General styles for the team component */
+.team_main {
+    width: 100%;
+    background-color: #f8f8f8; 
+    border-radius: 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    margin-top: 0;
+}
+
+/* Section styling */
+.team_section {
+    padding-top: 0;
+    padding-bottom: 6rem;
+    margin-bottom: 10rem;
+    text-align: center; /* Center the content within the section */
+}
+
+/* Heading styling */
+.team_section h2 {
+    font-size: 2rem;
+    color: #333; 
+    margin-bottom: 1rem; 
+}
+
+/* Decorative title line */
+.title_decoration {
+    width: 35vh;
+    height: 0.25rem; /* Updated to be consistent with the design */
+    background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
+    margin: 0 auto 3rem auto; /* Center the decoration and add bottom margin */
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .team_section {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .title_decoration {
+        width: 50vw; /* Adjust width for smaller screens */
+    }
+}
+
+/* Team member grid layout */
+.team_grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Individual team member styling */
+.team_member {
+  position: relative;
+ /* Adjust as needed */
+  text-align: center;
+  width: 20%
+
+}
+
+.team_image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.team_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 0 0 10px 10px;
+}
+
+.team_member:hover .team_overlay {
+  opacity: 1;
+}
+
+.team_overlay h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.team_overlay p {
+  font-size: 0.9rem;
+}
+
+.team_icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team_icons a {
+  color: white;
+  font-size: 1.2rem;
+}

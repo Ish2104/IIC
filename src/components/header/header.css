@@ -1,0 +1,112 @@
+/* header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;
+    background-color:rgb(253, 250, 249);
+    /* Add other styling as needed */
+    position: relative; /* Ensure that the orange bar can be positioned absolutely */
+    /* Add other styling as needed */
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.2);
+    height: 120px;
+    
+}
+
+
+
+
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color:rgb(255, 85, 0);
+    color: #fff;
+    border: transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+    /* Add other styling as needed */
+}
+
+
+.temp{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* Add other styling as needed */
+}
+
+/* .logo {
+    padding-left: 1.5rem; 
+    size: 2 px;
+
+
+} */
+
+.logo img {
+    height: 200px; /* Set a specific height for the logo */
+    width: auto; /* Maintain aspect ratio */
+    padding: 0rem;
+    padding-left: 2rem; 
+    padding-top: 1rem;;
+    margin-left: 10rem;;
+}
+.options {
+    display: flex; /* Initially hide the menu */
+    margin-right: 2%; /* Add right margin to the menu */
+    gap: 1.5rem; /* Add space between navigation links */
+}
+
+.options.open {
+    display: flex; /* Show the menu when open */
+    gap: 1.5rem; /* Add space between navigation links */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.options a{
+    text-decoration: none;
+    font-size: 1.1rem; /* Adjust font size as needed */
+    white-space: nowrap; /* Prevent text wrapping */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: #333; /* Change text color */
+    font-weight: 500;
+}
+
+.options a:hover {
+    color:rgb(255, 85, 0); /* Change text color on hover */
+    transform: scale(1.1);
+}
+
+.hamburger-icon {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    display: none; /* Initially hide the hamburger icon */
+    /* Style your hamburger icon (e.g., color, padding, etc.) */
+}
+
+@media screen and (max-width: 1200px) {
+
+    .header {
+        flex-direction: column; /* Stack logo and navigation links vertically */
+        align-items: flex-start; /* Align logo and navigation links to the left */
+    }
+
+    .options {
+        display: none;
+    }
+
+    .options.open {
+        display: flex;
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+}

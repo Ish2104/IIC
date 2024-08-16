@@ -1,0 +1,46 @@
+.hero-major {
+    width: 100%;
+    background-color: rgb(245, 238, 234); /* Background color for the major focus area */
+    border-radius: 0px; /* Rounded corners for the section */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    margin-top: 0rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 2rem; /* Add padding to left side of the entire section */
+}
+
+section.hero_major {
+    padding: 1rem;
+}
+
+.hero_major h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333; /* Darker color for the heading */
+    text-align: left; /* Align headings to the left */
+    margin-left: 2rem; /* Add left margin to headings */
+}
+
+.hero_major .title_decoration {
+    width: 55vh;
+    height: 0.25rem; /* Adjusted height */
+    background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
+    color: transparent;
+    margin: 1rem 0; /* Center decoration below the title */
+    margin-left: 2rem; /* Align decoration with heading */
+}
+
+.hero_major ul {
+    list-style-type: disc; /* Bullet points for the list items */
+    padding-left: 1.5rem; /* Indent the list items */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.hero_major li {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
