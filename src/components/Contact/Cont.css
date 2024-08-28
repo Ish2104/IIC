@@ -153,7 +153,13 @@
     height: 170px; /* Adjust the value as needed */
   }
 
-  
+  .title_decorater {
+    width: 45vh;
+    height: 0.15rem;
+    background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
+    margin: 0 auto 3rem auto;
+    margin-bottom: 7rem;
+  }
   
   
    

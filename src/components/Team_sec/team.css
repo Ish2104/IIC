@@ -77,7 +77,7 @@
 
 /* Decorative title line */
 .title_decoration {
-    width: 35vh;
+    width: 15vh;
     height: 0.25rem; /* Updated to be consistent with the design */
     background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
     margin: 0 auto 3rem auto; /* Center the decoration and add bottom margin */

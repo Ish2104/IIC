@@ -1,23 +1,33 @@
 .hero-major {
-    width: 100%;
-    background-color: rgb(245, 238, 234); /* Background color for the major focus area */
+    
+    width: 98%;
+    background-image: url('../../images/iicbanner.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     border-radius: 0px; /* Rounded corners for the section */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
     margin-top: 0rem;
     padding-top: 6rem;
     padding-bottom: 6rem;
-    padding-left: 2rem; /* Add padding to left side of the entire section */
+    padding-left: 2rem; /* Add padding to the left side of the entire section */
+    color: #fff; /* Change text color to white for better contrast */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Add subtle text shadow for better readability */
 }
 
 section.hero_major {
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 0rem;
+    margin-right: 0rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to the section for better text readability */
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 .hero_major h2 {
     margin-top: 2rem;
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #333; /* Darker color for the heading */
+    color: #fff; /* Ensure headings are white */
     text-align: left; /* Align headings to the left */
     margin-left: 2rem; /* Add left margin to headings */
 }
@@ -40,7 +50,7 @@ section.hero_major {
 
 .hero_major li {
     font-size: 1.1rem;
-    color: #666;
+    color: #fff; /* Ensure list items are white */
     margin-bottom: 0.5rem;
     text-align: left;
 }

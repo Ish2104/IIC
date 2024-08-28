@@ -35,29 +35,29 @@ const eventsData = [
     title: 'EPOCH 7: HACKFINAL',
     date: 'April 22, 2024',
     image: require('../../images/Event2.png'),
-    pdf: 'file:///C:/Users/asus/AppData/Local/Microsoft/Windows/INetCache/IE/2AU9QXPF/newsletter%20IIC[1].pdf'
+    pdf: '/documents/newsletter_IIC.pdf'
   },
   {
     id: 3,
     title: 'WORLD ENVIRONMENT DAY ',
     date: 'Jun 5, 2024',
     image: require('../../images/Event3.png'),
-    pdf: 'file:///C:/Users/asus/AppData/Local/Microsoft/Windows/INetCache/IE/2AU9QXPF/newsletter%20IIC[1].pdf'
+    pdf: '/documents/newsletter_IIC.pdf'
   },
-  {
-    id: 4,
-    title: 'Another Event',
-    date: 'Aug 15, 2022',
-    image: require('../../images/Event2.png'),
-    pdf: 'file:///C:/Users/asus/AppData/Local/Microsoft/Windows/INetCache/IE/2AU9QXPF/newsletter%20IIC[1].pdf'
-  },
-  {
-    id: 5,
-    title: 'Another Event',
-    date: 'Sep 30, 2022',
-    image: require('../../images/Event2.png'),
-    pdf: 'file:///C:/Users/asus/AppData/Local/Microsoft/Windows/INetCache/IE/2AU9QXPF/newsletter%20IIC[1].pdf'
-  },
+  // {
+  //   id: 4,
+  //   title: 'Another Event',
+  //   date: 'Aug 15, 2022',
+  //   image: require('../../images/Event2.png'),
+  //   pdf: 'file:///C:/Users/asus/AppData/Local/Microsoft/Windows/INetCache/IE/2AU9QXPF/newsletter%20IIC[1].pdf'
+  // },
+  // {
+  //   id: 5,
+  //   title: 'Another Event',
+  //   date: 'Sep 30, 2022',
+  //   image: require('../../images/Event2.png'),
+  //   pdf: 'file:///C:/Users/asus/AppData/Local/Microsoft/Windows/INetCache/IE/2AU9QXPF/newsletter%20IIC[1].pdf'
+  // },
   // Add more events as needed
 ];
 

@@ -1,160 +1,5 @@
-// import React from 'react';
-// import './Team_new.css';
-// import mem1 from "../../images/pankajvajpayee.jpg";
-// import mem2 from "../../images/deepika.jpg";
-// import mem3 from "../../images/anupamsaronwala.jpg";
-// import mem4 from "../../images/anujg.jpg";
-// import mem5 from "../../images/pravesh.jpg";
-// import mem6 from "../../images/jaspreet.jpg";
-// import mem7 from "../../images/twisha.jpg";
-// import mem8 from "../../images/gurusahai.jpg";
-
-
-// const Team = () => {
-//   return (
-//     <div className="team_main">
-//       <section className="team_section">
-//         <h2>OUR TEAM</h2>
-
-//         <div
-//             className="title_decoration"
-//             style={{ height: "0.25rem", width: "55vh", marginLeft: "72vh" }}
-//           >
-//             {" "}
-//             hello
-//         </div>
-      
-
-//         <div className="team_grid">
-
-
-//           <div className="team_member">
-//             <img src={mem1} alt="Dr. Pankaj Vajpayee" className="team_image" />
-//             <div className="team_overlay">
-//               <h3>Dr. Pankaj Vajpayee</h3>
-//               <p>President</p>
-//               <div className="team_icons">
-//                 <a href="#"><i className="fab fa-x"></i></a>
-//                 <a href="#"><i className="fab fa-facebook-f"></i></a>
-//                 <a href="#"><i className="fab fa-instagram"></i></a>
-//                 <a href="#"><i className="fab fa-linkedin-in"></i></a>
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="team_member">
-//             <img src={mem2} alt="Dr. Deepika Bhaskar" className="team_image" />
-//             <div className="team_overlay">
-//               <h3>Dr. Deepika Bhaskar</h3>
-//               <p>President</p>
-//               <div className="team_icons">
-//                 <a href="#"><i className="fab fa-x"></i></a>
-//                 <a href="#"><i className="fab fa-facebook-f"></i></a>
-//                 <a href="#"><i className="fab fa-instagram"></i></a>
-//                 <a href="#"><i className="fab fa-linkedin-in"></i></a>
-//               </div>
-//             </div>
-//           </div>
-
-
-//           <div className="team_member">
-//             <img src={mem3} alt="Mr. Anupam Saronwala" className="team_image" />
-//             <div className="team_overlay">
-//               <h3>Mr. Anupam Saronwala</h3>
-//               <p>President</p>
-//               <div className="team_icons">
-//                 <a href="#"><i className="fab fa-x"></i></a>
-//                 <a href="#"><i className="fab fa-facebook-f"></i></a>
-//                 <a href="#"><i className="fab fa-instagram"></i></a>
-//                 <a href="#"><i className="fab fa-linkedin-in"></i></a>
-//               </div>
-//             </div>
-//           </div>
-
-
-//           <div className="team_member">
-//             <img src={mem4} alt="Dr. Anuj Grover" className="team_image" />
-//             <div className="team_overlay">
-//               <h3>Dr. Anuj Grover</h3>
-//               <p>President</p>
-//               <div className="team_icons">
-//                 <a href="#"><i className="fab fa-x"></i></a>
-//                 <a href="#"><i className="fab fa-facebook-f"></i></a>
-//                 <a href="#"><i className="fab fa-instagram"></i></a>
-//                 <a href="#"><i className="fab fa-linkedin-in"></i></a>
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="team_member">
-//             <img src={mem5} alt="Dr. Pravesh Biyani" className="team_image" />
-//             <div className="team_overlay">
-//               <h3>Dr. Pravesh Biyani</h3>
-//               <p>President</p>
-//               <div className="team_icons">
-//                 <a href="#"><i className="fab fa-x"></i></a>
-//                 <a href="#"><i className="fab fa-facebook-f"></i></a>
-//                 <a href="#"><i className="fab fa-instagram"></i></a>
-//                 <a href="#"><i className="fab fa-linkedin-in"></i></a>
-//               </div>
-//             </div>
-//           </div>
-
-
-//           <div className="team_member">
-//             <img src={mem6} alt="Dr. Jaspreet Kaur" className="team_image" />
-//             <div className="team_overlay">
-//               <h3>Dr. Jaspreet Kaur</h3>
-//               <p>President</p>
-//               <div className="team_icons">
-//                 <a href="#"><i className="fab fa-x"></i></a>
-//                 <a href="#"><i className="fab fa-facebook-f"></i></a>
-//                 <a href="#"><i className="fab fa-instagram"></i></a>
-//                 <a href="#"><i className="fab fa-linkedin-in"></i></a>
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="team_member">
-//             <img src={mem7} alt="Twisha Kacker" className="team_image" />
-//             <div className="team_overlay">
-//               <h3>wisha Kacker</h3>
-//               <p>President</p>
-//               <div className="team_icons">
-//                 <a href="#"><i className="fab fa-x"></i></a>
-//                 <a href="#"><i className="fab fa-facebook-f"></i></a>
-//                 <a href="#"><i className="fab fa-instagram"></i></a>
-//                 <a href="#"><i className="fab fa-linkedin-in"></i></a>
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="team_member">
-//             <img src={mem8} alt="Kumar Gurusahai" className="team_image" />
-//             <div className="team_overlay">
-//               <h3>Kumar Gurusahai</h3>
-//               <p>President</p>
-//               <div className="team_icons">
-//                 <a href="#"><i className="fab fa-x"></i></a>
-//                 <a href="#"><i className="fab fa-facebook-f"></i></a>
-//                 <a href="#"><i className="fab fa-instagram"></i></a>
-//                 <a href="#"><i className="fab fa-linkedin-in"></i></a>
-//               </div>
-//             </div>
-//           </div>
-
-
-         
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }
-
-// export default Team;
-
-
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 import './Team_new.css';
 import mem1 from "../../images/pankajvajpayee.jpg";
 import mem2 from "../../images/deepika.jpg";
@@ -166,86 +11,102 @@ import mem7 from "../../images/twisha.jpg";
 import mem8 from "../../images/gurusahai.jpg";
 
 const teamMembers = [
-  {
-    name: "Dr. Pankaj Vajpayee",
-    title:"",
-    img: mem1,
-    linkedin: "https://www.linkedin.com/in/pankaj-vajpayee/"
-  },
-  {
-    name: "Dr. Deepika Bhaskar",
-    title: "",
-    img: mem2,
-    linkedin: "https://www.linkedin.com/in/deepika-bhaskar/"
-  },
-  {
-    name: "Mr. Anupam Saronwala",
-    title: "",
-    img: mem3,
-    linkedin: "https://www.linkedin.com/in/anupam-saronwala/"
-  },
-  {
-    name: "Dr. Anuj Grover",
-    title: "",
-    img: mem4,
-    linkedin: "https://www.linkedin.com/in/anuj-grover/"
-  },
-  {
-    name: "Dr. Pravesh Biyani",
-    title: "",
-    img: mem5,
-    linkedin: "https://www.linkedin.com/in/pravesh-biyani/"
-  },
-  {
-    name: "Dr. Jaspreet Kaur",
-    title: "",
-    img: mem6,
-    linkedin: "https://www.linkedin.com/in/jaspreet-kaur/"
-  },
-  {
-    name: "Twisha Kacker",
-    title: "",
-    img: mem7,
-    linkedin: "https://www.linkedin.com/in/twisha-kacker/"
-  },
-  {
-    name: "Kumar Gurusahai",
-    title: "",
-    img: mem8,
-    linkedin: "https://www.linkedin.com/in/kumar-gurusahai/"
-  }
+  { name: "Dr. Pankaj Vajpayee", img: mem1, linkedin: "https://www.linkedin.com/in/pankaj-vajpayee/" },
+  { name: "Dr. Deepika Bhaskar", img: mem2, linkedin: "https://www.linkedin.com/in/deepika-bhaskar/" },
+  { name: "Mr. Anupam Saronwala", img: mem3, linkedin: "https://www.linkedin.com/in/anupam-saronwala/" },
+  { name: "Dr. Anuj Grover", img: mem4, linkedin: "https://www.linkedin.com/in/anuj-grover/" },
+  { name: "Dr. Pravesh Biyani", img: mem5, linkedin: "https://www.linkedin.com/in/pravesh-biyani/" },
+  { name: "Dr. Jaspreet Kaur", img: mem6, linkedin: "https://www.linkedin.com/in/jaspreet-kaur/" },
+  { name: "Twisha Kacker", img: mem7, linkedin: "https://www.linkedin.com/in/twisha-kacker/" },
+  { name: "Kumar Gurusahai", img: mem8, linkedin: "https://www.linkedin.com/in/kumar-gurusahai/" }
 ];
 
 const Team = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const scrollContainer = containerRef.current;
+    let scrollAmount = 0;
+
+    const scroll = () => {
+      if (scrollContainer) {
+        scrollAmount += 1;
+        scrollContainer.scrollLeft += 4;
+
+        if (scrollAmount >= scrollContainer.scrollWidth / 2) {
+          scrollContainer.scrollLeft = 0;
+          scrollAmount = 0;
+        }
+      }
+    };
+
+    const scrollInterval = setInterval(scroll, 30);
+
+    return () => clearInterval(scrollInterval);
+  }, []);
+
+  useEffect(() => {
+    const teamMembers = document.querySelectorAll('.team_member');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('slide-up');
+          observer.unobserve(entry.target); // Stop observing after it slides up
+        }
+      });
+    });
+
+    teamMembers.forEach(member => {
+      observer.observe(member);
+    });
+
+    return () => {
+      teamMembers.forEach(member => {
+        observer.unobserve(member);
+      });
+    };
+  }, []);
+
+  const handleScrollLeft = () => {
+    const scrollContainer = containerRef.current;
+    scrollContainer.scrollLeft -= 300;
+  };
+
+  const handleScrollRight = () => {
+    const scrollContainer = containerRef.current;
+    scrollContainer.scrollLeft += 300;
+  };
+
   return (
     <div className="team_main">
       <section className="team_section">
-        <h2>OUR TEAM</h2>
-
-        <div
-            className="title_decoration"
-            style={{ height: "0.25rem", width: "55vh", marginLeft: "72vh" }}
-          >
-            {" "}
-            hello
-        </div>
-      
-        <div className="team_grid">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="team_member">
-              <img src={member.img} alt={member.name} className="team_image" />
-              <div className="team_overlay">
-                <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                  <h3>{member.name}</h3>
+        <h2>MEET OUR TEAM</h2>
+        <div className="title_decorate"></div>
+        <div className="team_grid_wrapper">
+          <button className="scroll_button left" onClick={handleScrollLeft}>
+            <ArrowBackIos />
+          </button>
+          <div className="team_grid" ref={containerRef}>
+            {teamMembers.concat(teamMembers).map((member, index) => (
+              <div key={index} className="team_member">
+                <div className="team_image_container">
+                  <img src={member.img} alt={member.name} className="team_image" />
+                </div>
+                <h3>{member.name}</h3>
+                <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="linkedin_link">
+                  LinkedIn
                 </a>
-                <p>{member.title}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <button className="scroll_button right" onClick={handleScrollRight}>
+            <ArrowForwardIos />
+          </button>
         </div>
       </section>
     </div>
   );
-}
+};
 
 export default Team;

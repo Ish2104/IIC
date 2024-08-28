@@ -24,16 +24,16 @@ function Cont() {
         <div className="cont">
           <h1>Contact Us</h1>
           <div
-            className="title_decoration"
-            style={{
-              height: "0.3rem",
-              width: "27vh",
-              marginLeft: "0vh",
-              marginTop: "2vh",
-            }}
+            className="title_decorater"
+            // style={{
+            //   height: "0.3rem",
+            //   width: "27vh",
+            //   marginLeft: "0vh",
+            //   marginTop: "2vh",
+            // }}
           >
-            {" "}
-            hello
+            {/* {" "}
+            hello */}
           </div>
           <br />
           <img src={logo1} alt="details" />

@@ -1,5 +1,7 @@
 import React from "react";
 import "./services.css"; // Make sure to create this CSS file
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Services = () => {
   return (

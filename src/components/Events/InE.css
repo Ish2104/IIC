@@ -13,16 +13,20 @@
 
 .ine-event-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust card size and layout */
-    gap: 20px; /* Space between cards */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust card size and layout */
+    gap: 0px; /* Space between cards */
+   
 }
 
 .ine-event-card {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    margin-left: 4rem;
+
 }
 
 .ine-event-card:hover {

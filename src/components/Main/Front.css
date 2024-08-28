@@ -66,6 +66,7 @@
     color: #555; /* Slightly darker color for contrast */
     line-height: 1.6; /* Increased line height for readability */
     margin: 0; /* Remove default margin */
+    text-align: justify;
 }
 
 @media screen and (max-width: 768px) {

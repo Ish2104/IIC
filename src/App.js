@@ -10,6 +10,8 @@ import Team from './components/Team_sec/Team';
 import InE from './components/Events/InE';
 import Main from './components/Main/Front';
 import News from './components/Newletter/News'
+import Foot from './components/Footer/Foot'
+
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
       <Team />
       <Cont />
       <News />
+      <Foot />
 
 
       

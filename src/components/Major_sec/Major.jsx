@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./hero_major.css";
 
 const Hero_major = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration
+    });
+  }, []);
+
   return (
-    <div className="hero-major">
+    <div className="hero-major" data-aos="fade-up">
       <section className="hero_major">
         <h2>Major Focus Areas</h2>
         <div
@@ -35,7 +43,7 @@ const Hero_major = () => {
           <li>Create an Institution’s Innovation portal to highlight innovative projects carried out by institution’s faculty and students.</li>
           <li>Organize Hackathons, idea competitions, mini-challenges, etc. with the involvement of industries.</li>
         </ul>
-      </section> 
+      </section>
     </div>
   );
 }
