@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 import './Team_new.css';
 import mem1 from "../../images/pankajvajpayee.jpg";
@@ -23,15 +23,16 @@ const teamMembers = [
 
 const Team = () => {
   const containerRef = useRef(null);
+  const [scrolling, setScrolling] = useState(true);
 
   useEffect(() => {
     const scrollContainer = containerRef.current;
     let scrollAmount = 0;
 
     const scroll = () => {
-      if (scrollContainer) {
+      if (scrollContainer && scrolling) {
         scrollAmount += 1;
-        scrollContainer.scrollLeft += 4;
+        scrollContainer.scrollLeft += 1; // Adjust speed here
 
         if (scrollAmount >= scrollContainer.scrollWidth / 2) {
           scrollContainer.scrollLeft = 0;
@@ -43,7 +44,7 @@ const Team = () => {
     const scrollInterval = setInterval(scroll, 30);
 
     return () => clearInterval(scrollInterval);
-  }, []);
+  }, [scrolling]);
 
   useEffect(() => {
     const teamMembers = document.querySelectorAll('.team_member');
@@ -78,6 +79,9 @@ const Team = () => {
     scrollContainer.scrollLeft += 300;
   };
 
+  const handleMouseEnter = () => setScrolling(false);
+  const handleMouseLeave = () => setScrolling(true);
+
   return (
     <div className="team_main">
       <section className="team_section">
@@ -87,7 +91,12 @@ const Team = () => {
           <button className="scroll_button left" onClick={handleScrollLeft}>
             <ArrowBackIos />
           </button>
-          <div className="team_grid" ref={containerRef}>
+          <div 
+            className="team_grid" 
+            ref={containerRef} 
+            onMouseEnter={handleMouseEnter} 
+            onMouseLeave={handleMouseLeave}
+          >
             {teamMembers.concat(teamMembers).map((member, index) => (
               <div key={index} className="team_member">
                 <div className="team_image_container">

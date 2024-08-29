@@ -10,7 +10,8 @@ import Team from './components/Team_sec/Team';
 import InE from './components/Events/InE';
 import Main from './components/Main/Front';
 import News from './components/Newletter/News'
-import Foot from './components/Footer/Foot'
+// import Foot from './components/Footer/Foot'
+import Footer from './components/Foot_Cont/Foot_Contact';
 
 
 
@@ -26,7 +27,8 @@ function App() {
       <Team />
       <Cont />
       <News />
-      <Foot />
+      {/* <Foot /> */}
+      <Footer />
 
 
       

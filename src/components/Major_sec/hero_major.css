@@ -19,8 +19,9 @@ section.hero_major {
     padding-left: 1rem;
     padding-right: 0rem;
     margin-right: 0rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to the section for better text readability */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background to the section for better text readability */
     border-radius: 5px; /* Optional: Add rounded corners */
+    margin-left: 1rem;;
 }
 
 .hero_major h2 {

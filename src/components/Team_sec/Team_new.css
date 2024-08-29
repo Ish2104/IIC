@@ -2,12 +2,13 @@
   width: 100%;
   background-color: #f8f8f8;
   padding: 4rem 0;
-  overflow: hidden;
+  overflow: hidden; /* Prevent overflow from causing vertical scroll */
 }
 
 .team_section {
   text-align: center;
   padding: 0 2rem;
+  overflow: hidden; /* Prevent overflow from causing vertical scroll */
 }
 
 .team_section h2 {
@@ -30,20 +31,21 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  height: 260px; /* Fixed height to prevent vertical overflow */
 }
 
 .team_grid {
   display: flex;
-  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-x: hidden; /* Hide horizontal scrollbars */
+  overflow-y: hidden; /* Hide vertical scrollbars */
   scroll-behavior: smooth;
   white-space: nowrap;
-  transition: none;
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   scrollbar-width: none; /* For Firefox */
 }
 
 .team_grid::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none; /* Hide scrollbars in Chrome, Safari, and Opera */
 }
 
 .team_member {
