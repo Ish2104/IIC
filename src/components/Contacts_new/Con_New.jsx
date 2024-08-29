@@ -27,8 +27,8 @@ const Con_New = () => {
     <div className="contact-wrapper">
       <h2 className="contact-title">Contact Us</h2>
       <div
-            className="title_decoration"
-            style={{ height: "0.25rem", width: "35vh", marginLeft: "75vh" }}
+            className="title_decorator"
+            style={{ height: "0.20rem", width: "43vh", marginLeft: "0vh" }}
           >
             {" "}
             hello

@@ -78,8 +78,8 @@ export default function InE() {
     <div className="ine-events">
       <h2 className="ine-title">I & E Events</h2>
       <div
-            className="title_decoration"
-            style={{ height: "0.25rem", width: "50vh", marginLeft: "49vh" }}
+            className="title_decorate"
+            style={{ height: "0.20rem", width: "41vh", marginLeft: "63vh",marginTop:"0vh" }}
           >
             {" "}
             hello

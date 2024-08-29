@@ -10,7 +10,7 @@ const Services = () => {
 
       <div
         className="title_decoration"
-        style={{ height: "0.25rem", width: "35vh", margin: "1rem auto" }}
+        style={{ height: "0.20rem", width: "43vh", margin: "1rem auto" }}
       >
         {/* Decoration element */}
       </div>
