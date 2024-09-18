@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .gallery-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .gallery-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    max-height: 600px; /* Set a maximum height for scroll effect */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Add padding to prevent scrollbar overlap */
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .gallery-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover .gallery-img {
+    transform: scale(1.05);
+  }
+  
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards; /* Adjust duration as needed */
+  }
+
+  .title_decorates {
+    width: 45vh;
+    height: 0.15rem;
+    background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
+    margin: 0 auto 3rem auto;
+    margin-bottom: 7rem;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

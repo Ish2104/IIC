@@ -1,27 +1,27 @@
 .hero-major {
-    
     width: 98%;
-    background-image: url('../../images/iicbanner.jpg'); /* Replace with the path to your image */
+    background-image: url('../../images/iicbanner.jpg'); /* Keep the image path as is */
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    border-radius: 0px; /* Rounded corners for the section */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    border-radius: 0px; /* No rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
     margin-top: 0rem;
     padding-top: 6rem;
     padding-bottom: 6rem;
-    padding-left: 2rem; /* Add padding to the left side of the entire section */
-    color: #fff; /* Change text color to white for better contrast */
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Add subtle text shadow for better readability */
+    color: #fff; /* Ensure text contrast */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow for readability */
 }
 
 section.hero_major {
-    padding-left: 1rem;
-    padding-right: 0rem;
-    margin-right: 0rem;
-    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background to the section for better text readability */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    margin-left: 1rem;;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background behind text */
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1200px; /* Limit the width of content without affecting the image */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow around the section */
 }
 
 .hero_major h2 {
@@ -29,8 +29,8 @@ section.hero_major {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #fff; /* Ensure headings are white */
-    text-align: left; /* Align headings to the left */
-    margin-left: 2rem; /* Add left margin to headings */
+    text-align: left;
+    margin-left: 2rem;
 }
 
 .hero_major .title_decoration {
@@ -38,13 +38,13 @@ section.hero_major {
     height: 0.25rem; /* Adjusted height */
     background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
     color: transparent;
-    margin: 1rem 0; /* Center decoration below the title */
+    margin: 1rem 0;
     margin-left: 2rem; /* Align decoration with heading */
 }
 
 .hero_major ul {
-    list-style-type: disc; /* Bullet points for the list items */
-    padding-left: 1.5rem; /* Indent the list items */
+    list-style-type: disc;
+    padding-left: 1.5rem;
     margin-top: 0;
     margin-bottom: 1rem;
 }

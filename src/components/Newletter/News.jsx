@@ -6,7 +6,7 @@ const News = () => {
 
   const handleSubscribe = () => {
     // The link to your newsletter PDF
-    const pdfUrl = '/documents/newsletter_IIC.pdf';
+    const pdfUrl = '/documents/newsletter_final.pdf';
     window.open(pdfUrl, '_blank');
   };
 
