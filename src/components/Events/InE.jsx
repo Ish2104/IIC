@@ -1,22 +1,8 @@
-// import React from 'react';
-// import "../Events/InE.css";
-
-// export default function InE() {
-//   return (
-//     <div>
-
-      
-//     </div>
-//   )
-// }
 
 
 import React, { useState } from 'react';
 import Pagination from '@mui/material/Pagination';
 import "../Events/InE.css"; 
-import event1 from "../../images/Event1.png";
-import event2 from "../../images/Event2.png";
-import event3 from "../../images/Event3.png";
 
 
 
@@ -25,17 +11,17 @@ import event3 from "../../images/Event3.png";
 const eventsData = [
   {
     id: 1,
-    title: 'EPOCH 6: HACKREWIND',
-    date: 'April 10 and 11, 2024',
-    image: require('../../images/Event1.png'),
-    pdf: '/documents/newsletter_IIC.pdf'
+    title: 'OnCoslice',
+    date: '15th March 2024',
+    image: require('../../images/Oncos.png'),
+    pdf: '/documents/OnCoslice.pdf'
   },
   {
     id: 2,
-    title: 'EPOCH 7: HACKFINAL',
-    date: 'April 22, 2024',
-    image: require('../../images/Event2.png'),
-    pdf: '/documents/newsletter_IIC.pdf'
+    title: 'Internship fair',
+    date: '15-16 March 2024',
+    image: require('../../images/Intern.png'),
+    pdf: '/documents/Internship.pdf'
   },
   {
     id: 3,
@@ -92,7 +78,7 @@ export default function InE() {
               <h3>{event.title}</h3>
               <p>{event.date}</p>
               <div className="ine-event-buttons">
-                <button className="ine-btn session-btn">Session</button>
+                {/* <button className="ine-btn session-btn">Session</button> */}
                 <button
                   className="ine-btn detail-btn"
                   onClick={() => window.open(event.pdf, '_blank')}

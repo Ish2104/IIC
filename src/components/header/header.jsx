@@ -29,8 +29,8 @@ const Header = () => {
                 <Link to="hero_major" smooth={true} duration={500}>Major Focus Areas</Link>
                 <Link to="ine-events" smooth={true} duration={500}>I & E Events</Link>
                 <Link to="team_section" smooth={true} duration={500}>Our Team</Link>
-                <Link to="section2" smooth={true} duration={500}>Downloads</Link>
-                <Link to="contact-container" smooth={true} duration={500}><div className="btn">Contact Us</div></Link>
+                <Link to="gallery-container" smooth={true} duration={500}>Gallery</Link>
+                <Link to="footer" smooth={true} duration={500}><div className="btn">Contact Us</div></Link>
             </nav>
         </header>
     );
