@@ -18,38 +18,118 @@ const eventsData = [
   },
   {
     id: 2,
-    title: 'Internship fair',
+    title: 'Internship Fair',
     date: '15-16 March 2024',
     image: require('../../images/Intern.png'),
     pdf: '/documents/Internship.pdf'
   },
   {
     id: 3,
-    title: 'WORLD ENVIRONMENT DAY ',
-    date: 'Jun 5, 2024',
-    image: require('../../images/Event3.png'),
-    pdf: '/documents/newsletter_IIC.pdf'
+    title: 'Design Panel ',
+    date: '16 March 2024',
+    image: require('../../images/Design.png'),
+    pdf: '/documents/Design.pdf'
   },
-  // {
-  //   id: 4,
-  //   title: 'Another Event',
-  //   date: 'Aug 15, 2022',
-  //   image: require('../../images/Event2.png'),
-  //   pdf: 'file:///C:/Users/asus/AppData/Local/Microsoft/Windows/INetCache/IE/2AU9QXPF/newsletter%20IIC[1].pdf'
-  // },
-  // {
-  //   id: 5,
-  //   title: 'Another Event',
-  //   date: 'Sep 30, 2022',
-  //   image: require('../../images/Event2.png'),
-  //   pdf: 'file:///C:/Users/asus/AppData/Local/Microsoft/Windows/INetCache/IE/2AU9QXPF/newsletter%20IIC[1].pdf'
-  // },
-  // Add more events as needed
+  {
+    id: 4,
+    title: 'Design Hub Designathon',
+    date: '16 March 2024',
+    image: require('../../images/Des.png'),
+    pdf: '/documents/Designathon.pdf'
+  },
+  {
+    id: 5,
+    title: 'Epoch',
+    date: '15-16 March 2024',
+    image: require('../../images/Epoch.png'),
+    pdf: '/documents/Epoch.pdf'
+  },
+  {
+    id: 6,
+    title: 'Enactus fair',
+    date: '16 March 2024',
+    image: require('../../images/Enactus.png'),
+    pdf: '/documents/Enactus.pdf'
+  },
+
+  {
+    id: 7,
+    title: 'Capitalist Date',
+    date: '16 March 2024',
+    image: require('../../images/Cap.png'),
+    pdf: '/documents/Cap.pdf'
+  },
+  {
+    id: 8,
+    title: 'Robosoccer',
+    date: '16 March 2024',
+    image: require('../../images/Rob.png'),
+    pdf: '/documents/Rob.pdf'
+  },
+  {
+    id: 9,
+    title: 'Fork It',
+    date: '15-16 March 2024',
+    image: require('../../images/Epoch.png'),
+    pdf: '/documents/Epoch.pdf'
+  },
+  {
+    id: 10,
+    title: 'Epoch',
+    date: '15-16 March 2024',
+    image: require('../../images/Epoch.png'),
+    pdf: '/documents/Epoch.pdf'
+  },
+  {
+    id: 11,
+    title: 'Epoch',
+    date: '15-16 March 2024',
+    image: require('../../images/Epoch.png'),
+    pdf: '/documents/Epoch.pdf'
+  },
+  {
+    id: 12,
+    title: 'Epoch',
+    date: '15-16 March 2024',
+    image: require('../../images/Epoch.png'),
+    pdf: '/documents/Epoch.pdf'
+  },
+  {
+    id: 13,
+    title: 'Epoch',
+    date: '15-16 March 2024',
+    image: require('../../images/Epoch.png'),
+    pdf: '/documents/Epoch.pdf'
+  },
+  {
+    id: 14,
+    title: 'Epoch',
+    date: '15-16 March 2024',
+    image: require('../../images/Epoch.png'),
+    pdf: '/documents/Epoch.pdf'
+  },
+  {
+    id: 15,
+    title: 'Epoch',
+    date: '15-16 March 2024',
+    image: require('../../images/Epoch.png'),
+    pdf: '/documents/Epoch.pdf'
+  },
+  {
+    id: 16,
+    title: 'Epoch',
+    date: '15-16 March 2024',
+    image: require('../../images/Epoch.png'),
+    pdf: '/documents/Epoch.pdf'
+  },
+  
+
+  
 ];
 
 export default function InE() {
   const [currentPage, setCurrentPage] = useState(1);
-  const eventsPerPage = 3;
+  const eventsPerPage = 4;
 
   // Calculate the indices for the current page
   const indexOfLastEvent = currentPage * eventsPerPage;

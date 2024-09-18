@@ -24,13 +24,14 @@ const teamMembers = [
 const Team = () => {
   const containerRef = useRef(null);
   const [scrolling, setScrolling] = useState(true);
+  const [manualScroll, setManualScroll] = useState(false);
 
   useEffect(() => {
     const scrollContainer = containerRef.current;
     let scrollAmount = 0;
 
     const scroll = () => {
-      if (scrollContainer && scrolling) {
+      if (scrollContainer && scrolling && !manualScroll) {
         scrollAmount += 1;
         scrollContainer.scrollLeft += 1; // Adjust speed here
 
@@ -44,39 +45,39 @@ const Team = () => {
     const scrollInterval = setInterval(scroll, 30);
 
     return () => clearInterval(scrollInterval);
-  }, [scrolling]);
+  }, [scrolling, manualScroll]);
 
   useEffect(() => {
+    const teamSection = document.querySelector('.team_section');
     const teamMembers = document.querySelectorAll('.team_member');
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('slide-up');
-          observer.unobserve(entry.target); // Stop observing after it slides up
+          teamMembers.forEach(member => member.classList.add('slide-up'));
         }
       });
     });
 
-    teamMembers.forEach(member => {
-      observer.observe(member);
-    });
+    observer.observe(teamSection);
 
     return () => {
-      teamMembers.forEach(member => {
-        observer.unobserve(member);
-      });
+      observer.disconnect();
     };
   }, []);
 
   const handleScrollLeft = () => {
     const scrollContainer = containerRef.current;
+    setManualScroll(true);
     scrollContainer.scrollLeft -= 300;
+    setTimeout(() => setManualScroll(false), 1000); // Resume auto scroll after 1 second
   };
 
   const handleScrollRight = () => {
     const scrollContainer = containerRef.current;
+    setManualScroll(true);
     scrollContainer.scrollLeft += 300;
+    setTimeout(() => setManualScroll(false), 1000); // Resume auto scroll after 1 second
   };
 
   const handleMouseEnter = () => setScrolling(false);
