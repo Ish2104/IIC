@@ -1,6 +1,6 @@
-.ine-events {
-    max-width: 1200px; /* Limit the container width */
-    margin: 0 auto; /* Center the container */
+/* .ine-events {
+    max-width: 1200px; 
+    margin: 0 auto; 
     padding: 2rem 1rem;
 }
 
@@ -11,15 +11,11 @@
     margin-bottom: 0.5rem;
 }
 
-/* .ine-title h2{
-   
-    margin-bottom: 2px;
-} */
 
 .ine-event-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust card size and layout */
-    gap: 0px; /* Space between cards */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 0px; 
    
 }
 
@@ -101,4 +97,177 @@
     background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
     color: transparent;
   }
+ */
 
+
+ .ine-events {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 2rem 1rem;
+}
+
+.ine-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.ine-event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1.5rem; 
+}
+
+.ine-event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%; /* Adjust width for responsiveness */
+    margin: 0 auto; /* Center cards */
+}
+
+.ine-event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ine-event-image {
+    width: 100%;
+    height: auto;
+}
+
+.ine-event-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.ine-event-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.ine-event-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.ine-event-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ine-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.session-btn {
+    background-color: #e4bb92;
+    color: #fff;
+}
+
+.detail-btn {
+    background-color: rgb(255, 85, 0);
+    color: #fff;
+}
+
+.ine-btn:hover {
+    opacity: 0.8;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.title_decorate {
+    background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
+    color: transparent;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .ine-events {
+        padding: 1.5rem 1rem; /* Adjust padding */
+    }
+
+    .ine-title {
+        font-size: 2rem; /* Reduce title size */
+    }
+
+    .ine-event-grid {
+        gap: 1rem; /* Reduce gap */
+    }
+
+    .ine-event-info h3 {
+        font-size: 1.4rem; /* Adjust heading size */
+    }
+
+    .ine-event-info p {
+        font-size: 0.95rem; /* Adjust paragraph size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ine-events {
+        padding: 1rem 0.5rem; /* Further reduce padding */
+    }
+
+    .ine-title {
+        font-size: 1.8rem; /* Smaller title */
+    }
+
+    .ine-event-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
+        gap: 1rem; /* Smaller gap */
+    }
+
+    .ine-event-card {
+        max-width: 90%; /* Adjust card width */
+    }
+
+    .ine-event-info h3 {
+        font-size: 1.3rem; /* Smaller heading */
+    }
+
+    .ine-event-info p {
+        font-size: 0.9rem; /* Smaller paragraph */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ine-events {
+        padding: 0.5rem 0.5rem; /* Minimum padding */
+    }
+
+    .ine-title {
+        font-size: 1.6rem; /* Smaller title */
+    }
+
+    .ine-event-grid {
+        grid-template-columns: 1fr; /* Single column for small screens */
+        gap: 0.75rem; /* Smaller gap */
+    }
+
+    .ine-event-card {
+        max-width: 100%; /* Full width card */
+    }
+
+    .ine-event-info h3 {
+        font-size: 1.2rem; /* Smaller heading */
+    }
+
+    .ine-event-info p {
+        font-size: 0.85rem; /* Smaller paragraph */
+    }
+}

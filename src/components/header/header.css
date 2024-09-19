@@ -1,4 +1,4 @@
-.header {
+/* .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,8 +39,8 @@
 
 .options {
     display: flex;
-    margin-left: auto; /* This pushes the options to the right */
-    margin-right: 15%; /* Add right margin to the menu */
+    margin-left: auto; 
+    margin-right: 15%; 
     gap: 1.5rem;
 }
 
@@ -90,5 +90,153 @@
 
     .hamburger-icon {
         display: block;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: rgb(253, 250, 249);
+    position: relative;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.2);
+    height: 100px; /* Reduce height for better responsiveness */
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: rgb(255, 85, 0);
+    color: #fff;
+    border: transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.temp {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    height: 150px; /* Adjust height for smaller screens */
+    width: auto;
+    padding: 0rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    margin-left: 1rem; /* Adjust margin */
+}
+
+.options {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10%; /* Reduce right margin */
+    gap: 1rem; /* Adjust gap */
+}
+
+.options.open {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.options a {
+    text-decoration: none;
+    font-size: 1rem; /* Adjust font size */
+    white-space: nowrap;
+    cursor: pointer;
+    color: #333;
+    font-weight: 500;
+}
+
+.options a:hover {
+    color: rgb(255, 85, 0);
+    transform: scale(1.1);
+}
+
+.hamburger-icon {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto; /* Adjust height for smaller screens */
+        padding: 0.5rem; /* Adjust padding */
+    }
+
+    .logo img {
+        height: 100px; /* Smaller logo */
+        padding-left: 1rem;
+        margin-left: 0; /* Remove large margin */
+    }
+
+    .options {
+        display: none; /* Hide options on small screens */
+    }
+
+    .options.open {
+        display: flex; /* Show options when menu is open */
+        flex-direction: column;
+        width: 100%; /* Full width menu */
+        align-items: flex-start; /* Align items to the left */
+        padding-left: 1rem; /* Add padding */
+    }
+
+    .options a {
+        margin: 0.5rem 0; /* Add spacing between links */
+    }
+
+    .hamburger-icon {
+        display: block;
+        margin-right: 1rem; /* Add margin */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem; /* Adjust padding */
+    }
+
+    .logo img {
+        height: 80px; /* Smaller logo */
+    }
+
+    .options a {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .hamburger-icon {
+        font-size: 30px; /* Larger icon */
     }
 }

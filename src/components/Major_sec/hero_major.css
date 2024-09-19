@@ -1,45 +1,49 @@
 .hero-major {
-    width: 98%;
-    background-image: url('../../images/iicbanner.jpg'); /* Keep the image path as is */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    border-radius: 0px; /* No rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
-    margin-top: 0rem;
+    width: 100%; /* Ensure full width */
+    background-image: url('../../images/iicbanner.jpg'); 
+    background-size: cover; /* Ensure image covers the entire area */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; 
+    border-radius: 0px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    margin-top: 0;
     padding-top: 6rem;
     padding-bottom: 6rem;
-    color: #fff; /* Ensure text contrast */
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow for readability */
+    color: #fff; 
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+    display: flex; /* Flex layout for alignment */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center vertically */
+    box-sizing: border-box; /* Include padding in width/height */
+    min-height: 50vh; /* Ensure the section has a minimum height */
 }
 
 section.hero_major {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background behind text */
+    background-color: rgba(0, 0, 0, 0.6); 
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
-    max-width: 1200px; /* Limit the width of content without affecting the image */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow around the section */
+    max-width: 1200px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; /* Include padding in width */
 }
 
 .hero_major h2 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #fff; /* Ensure headings are white */
+    color: #fff; 
     text-align: left;
-    margin-left: 2rem;
 }
 
 .hero_major .title_decoration {
     width: 55vh;
-    height: 0.25rem; /* Adjusted height */
+    height: 0.25rem; 
     background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
     color: transparent;
     margin: 1rem 0;
-    margin-left: 2rem; /* Align decoration with heading */
 }
 
 .hero_major ul {
@@ -47,11 +51,97 @@ section.hero_major {
     padding-left: 1.5rem;
     margin-top: 0;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .hero_major li {
     font-size: 1.1rem;
-    color: #fff; /* Ensure list items are white */
+    color: #fff; 
     margin-bottom: 0.5rem;
     text-align: left;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .hero-major {
+        padding-top: 4rem;
+        padding-bottom: 4rem; /* Reduce padding */
+    }
+
+    section.hero_major {
+        padding: 1.5rem; /* Reduce padding */
+        max-width: 800px; /* Adjust width */
+    }
+
+    .hero_major h2 {
+        font-size: 1.8rem; /* Reduce heading size */
+    }
+
+    .hero_major .title_decoration {
+        width: 40vh; /* Adjust decoration width */
+    }
+
+    .hero_major ul {
+        padding-left: 1.25rem; /* Adjust padding */
+    }
+
+    .hero_major li {
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-major {
+        padding-top: 3rem; /* Further reduce padding */
+        padding-bottom: 3rem;
+    }
+
+    section.hero_major {
+        padding: 1rem; /* Smaller padding */
+        max-width: 90%; /* Use full width */
+    }
+
+    .hero_major h2 {
+        font-size: 1.6rem; /* Smaller heading */
+    }
+
+    .hero_major .title_decoration {
+        width: 30vh; /* Smaller decoration width */
+    }
+
+    .hero_major ul {
+        padding-left: 1rem; /* Adjust padding */
+    }
+
+    .hero_major li {
+        font-size: 0.95rem; /* Smaller list text */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-major {
+        padding-top: 2rem; /* Minimum padding */
+        padding-bottom: 2rem;
+    }
+
+    section.hero_major {
+        padding: 0.75rem; /* Minimum padding */
+        max-width: 100%; /* Full width */
+    }
+
+    .hero_major h2 {
+        font-size: 1.4rem; /* Smaller heading */
+    }
+
+    .hero_major .title_decoration {
+        width: 25vh; /* Smaller decoration width */
+    }
+
+    .hero_major ul {
+        padding-left: 0.75rem; /* Smaller padding */
+    }
+
+    .hero_major li {
+        font-size: 0.85rem; /* Smaller list text */
+    }
 }

@@ -1,22 +1,21 @@
-/* Foot.css */
-
+/* 
 .footer {
-    background-color: #1a1a1a; /* Dark background */
-    color: #ffffff; /* White text color */
+    background-color: #1a1a1a; 
+    color: #ffffff; 
     padding: 40px 20px;
-    text-align: left; /* Align text to the left */
-    font-family: Arial, sans-serif; /* Font style */
+    text-align: left; 
+    font-family: Arial, sans-serif; 
   }
   
   .footer_content {
     display: flex;
-    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
-    justify-content: space-between; /* Space between sections */
-    gap: 20px; /* Space between items */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
   }
   
   .footer_section {
-    flex: 1 1 200px; /* Flexible width with a minimum of 200px */
+    flex: 1 1 200px; 
     margin-bottom: 20px;
     margin-left: 90px;
   }
@@ -24,30 +23,136 @@
   .footer_section h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: rgb(255, 85, 0); /* Orange color for headings */
+    color: rgb(255, 85, 0); 
   }
   
   .footer_section p {
     margin: 0;
-    line-height: 1.5; /* Line height for readability */
+    line-height: 1.5; 
     font-size: 14px;
   }
   
   .footer_section a {
-    color: rgb(255, 85, 0); /* Orange color for links */
+    color: rgb(255, 85, 0);
     text-decoration: none;
   }
   
   .footer_section a:hover {
-    text-decoration: none; /* Underline on hover */
+    text-decoration: none; 
   }
   
   .footer_bottom {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-    color: #cccccc; /* Light gray for bottom text */
-    border-top: 1px solid #333; /* Light border at the top of the bottom section */
+    color: #cccccc; 
+    border-top: 1px solid #333; 
     padding-top: 10px;
+  }
+   */
+
+   .footer {
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+    padding: 40px 20px;
+    text-align: left; 
+    font-family: Arial, sans-serif; 
+  }
+  
+  .footer_content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+  }
+  
+  .footer_section {
+    flex: 1 1 200px; 
+    margin-bottom: 20px;
+    margin-left: 90px;
+  }
+  
+  .footer_section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(255, 85, 0); 
+  }
+  
+  .footer_section p {
+    margin: 0;
+    line-height: 1.5; 
+    font-size: 14px;
+  }
+  
+  .footer_section a {
+    color: rgb(255, 85, 0);
+    text-decoration: none;
+  }
+  
+  .footer_section a:hover {
+    text-decoration: none; 
+  }
+  
+  .footer_bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cccccc; 
+    border-top: 1px solid #333; 
+    padding-top: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 1024px) {
+    .footer_content {
+      justify-content: flex-start; 
+      gap: 15px; 
+    }
+    .footer_section {
+      flex: 1 1 45%; /* Adjust flex basis for tablets */
+      margin-left: 0; 
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer_content {
+      justify-content: center; 
+      gap: 10px;
+    }
+    .footer_section {
+      flex: 1 1 100%; /* Full width for mobile devices */
+      margin-left: 0; 
+      text-align: center; /* Center align text */
+    }
+    .footer_section h3 {
+      font-size: 16px; /* Slightly smaller heading */
+    }
+    .footer_section p {
+      font-size: 13px; /* Adjust text size */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer {
+      padding: 20px 10px; /* Reduce padding for small screens */
+    }
+    .footer_content {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center; /* Center align items */
+    }
+    .footer_section {
+      margin-bottom: 15px; /* Reduce bottom margin */
+    }
+    .footer_section h3 {
+      font-size: 14px; /* Smaller heading */
+    }
+    .footer_section p {
+      font-size: 12px; /* Smaller paragraph text */
+    }
+    .footer_bottom {
+      font-size: 12px; /* Smaller footer bottom text */
+      padding-top: 5px; 
+      margin-top: 15px; 
+    }
   }
   

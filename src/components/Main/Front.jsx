@@ -54,10 +54,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <h1>Institute Innovation Council (IIC)</h1>
         <p>
-          {/* IIC (Institute Innovation Council) aims to enhance the culture of
-          innovation and incubation among faculty and students at IIIT-D,
-          leading to successful IIIT-D startups, promoted and owned by the
-          faculties and the students. */}
+         
           The Institute Innovation Council (IIC) is dedicated to fostering a
           vibrant culture of innovation and incubation among faculty and
           students at IIIT-D. Our mission is to drive creativity and
