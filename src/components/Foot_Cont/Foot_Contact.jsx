@@ -34,7 +34,7 @@ const Footer_Cont = () => {
         <div className="footer_section">
           <h3>Quick Links</h3>
           <p>
-            <a href="#">MOE Innovation Cell</a>
+            <a href="https://iic.mic.gov.in/">MOE Innovation Cell</a>
           </p>
         </div>
       </div>

@@ -22,7 +22,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 10px;
-    max-height: 600px; /* Set a maximum height for scroll effect */
+    max-height: 400px; /* Set a maximum height for scroll effect */
     overflow-y: auto; /* Enable vertical scrolling */
     padding-right: 10px; /* Add padding to prevent scrollbar overlap */
   }
@@ -33,7 +33,7 @@ body {
   }
   
   .gallery-img {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
     border-radius: 8px;

@@ -8,7 +8,16 @@ import event5 from '../../images/Epoch.png';
 import event6 from '../../images/Rob.png';
 import event7 from '../../images/Intern.png';
 import event8 from '../../images/Oncos.png';
-import event9 from '../../images/Design.png';
+import event9 from '../../images/Vcs.png';
+import event10 from '../../images/Bharat.png';
+import event11 from '../../images/Ad.png';
+import event12 from '../../images/Biz.png';
+import event13 from '../../images/Fin.png';
+import event14 from '../../images/Fintech.png';
+import event15 from '../../images/Fork.png';
+import event16 from '../../images/Solv.png';
+
+
 
 const images = [
   { id: 1, src: event1, alt: "event 1" },
@@ -20,6 +29,13 @@ const images = [
   { id: 7, src: event7, alt: "event 7" },
   { id: 8, src: event8, alt: "event 8" },
   { id: 9, src: event9, alt: "event 9" },
+  { id: 10, src: event10, alt: "event 10" },
+  { id: 11, src: event11, alt: "event 11" },
+  { id: 12, src: event12, alt: "event 12" },
+  { id: 13, src: event13, alt: "event 13" },
+  { id: 14, src: event14, alt: "event 14" },
+  { id: 15, src: event15, alt: "event 15" },
+  { id: 16, src: event16, alt: "event 16" },
 ];
 
 const Gal = () => {

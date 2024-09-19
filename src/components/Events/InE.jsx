@@ -69,58 +69,58 @@ const eventsData = [
   {
     id: 9,
     title: 'Fork It',
-    date: '15-16 March 2024',
-    image: require('../../images/Epoch.png'),
-    pdf: '/documents/Epoch.pdf'
+    date: '16 March 2024',
+    image: require('../../images/Fork.png'),
+    pdf: '/documents/Fork.pdf'
   },
   {
     id: 10,
-    title: 'Epoch',
-    date: '15-16 March 2024',
-    image: require('../../images/Epoch.png'),
-    pdf: '/documents/Epoch.pdf'
+    title: 'The Biz-Ent-ine Empire',
+    date: '15 March 2024',
+    image: require('../../images/Biz.png'),
+    pdf: '/documents/Biz.pdf'
   },
   {
     id: 11,
-    title: 'Epoch',
-    date: '15-16 March 2024',
-    image: require('../../images/Epoch.png'),
-    pdf: '/documents/Epoch.pdf'
+    title: 'Finance Dilema',
+    date: '16 March 2024',
+    image: require('../../images/Fin.png'),
+    pdf: '/documents/Fin.pdf'
   },
   {
     id: 12,
-    title: 'Epoch',
-    date: '15-16 March 2024',
-    image: require('../../images/Epoch.png'),
-    pdf: '/documents/Epoch.pdf'
+    title: 'Bidding B-Plan',
+    date: '16 March 2024',
+    image: require('../../images/Solv.png'),
+    pdf: '/documents/Bid.pdf'
   },
   {
     id: 13,
-    title: 'Epoch',
+    title: 'Fintech Hackathon',
     date: '15-16 March 2024',
-    image: require('../../images/Epoch.png'),
-    pdf: '/documents/Epoch.pdf'
+    image: require('../../images/Fintech.png'),
+    pdf: '/documents/Fintech.pdf'
   },
   {
     id: 14,
-    title: 'Epoch',
-    date: '15-16 March 2024',
-    image: require('../../images/Epoch.png'),
-    pdf: '/documents/Epoch.pdf'
+    title: 'Vcs Investor Panel',
+    date: '15 March 2024',
+    image: require('../../images/Vcs.png'),
+    pdf: '/documents/Vcs.pdf'
   },
   {
     id: 15,
-    title: 'Epoch',
-    date: '15-16 March 2024',
-    image: require('../../images/Epoch.png'),
-    pdf: '/documents/Epoch.pdf'
+    title: 'Bharat AI',
+    date: '16 March 2024',
+    image: require('../../images/Bharat.png'),
+    pdf: '/documents/Bharat.pdf'
   },
   {
     id: 16,
-    title: 'Epoch',
-    date: '15-16 March 2024',
-    image: require('../../images/Epoch.png'),
-    pdf: '/documents/Epoch.pdf'
+    title: 'Ad-Mad',
+    date: '15 March 2024',
+    image: require('../../images/Ad.png'),
+    pdf: '/documents/Ad.pdf'
   },
   
 
@@ -145,7 +145,7 @@ export default function InE() {
       <h2 className="ine-title">I & E Events</h2>
       <div
             className="title_decorate"
-            style={{ height: "0.20rem", width: "41vh", marginLeft: "63vh",marginTop:"0vh" }}
+            style={{ height: "0.15rem", width: "41vh", marginLeft: "66vh",marginTop:"0vh" }}
           >
             {" "}
             hello
