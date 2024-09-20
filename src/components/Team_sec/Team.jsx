@@ -87,7 +87,7 @@ const Team = () => {
     <div className="team_main">
       <section className="team_section">
         <h2>MEET OUR TEAM</h2>
-        <div className="title_decorate"></div>
+        <div className="title_decorates"></div>
         <div className="team_grid_wrapper">
           <button className="scroll_button left" onClick={handleScrollLeft}>
             <ArrowBackIos />
