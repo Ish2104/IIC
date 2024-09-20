@@ -1,138 +1,3 @@
-/* .team_main {
-  width: 100%;
-  background-color: #f8f8f8;
-  padding: 4rem 0;
-  overflow: hidden;
-}
-
-.team_section {
-  text-align: center;
-  padding: 0 2rem;
-  overflow: hidden; 
-}
-
-.team_section h2 {
-  font-size: 2.5rem;
-  color: #060100dc;
-  margin-bottom: 0.5rem;
-}
-
-.title_decorate {
-  width: 55vh;
-  height: 0.15rem;
-  background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
-  margin: 0 auto 3rem auto;
-  margin-bottom: 7rem;
-}
-
-.team_grid_wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: 260px; 
-}
-
-.team_grid {
-  display: flex;
-  overflow-x: hidden; 
-  overflow-y: hidden; 
-   scroll-behavior: smooth;
-  white-space: nowrap;
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
-}
-
-.team_grid::-webkit-scrollbar {
-  display: none; 
-}
-
-.team_member {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 180px;
-  flex-shrink: 0;
-  margin: 0 10px;
-  display: inline-block;
-  opacity: 0; 
-  transform: translateY(50px); 
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.team_member.slide-up {
-  opacity: 1;
-  transform: translateY(0); 
-}
-
-.team_image_container {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto 15px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.team_image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.team_member h3 {
-  margin: 10px 0 5px 0;
-  font-size: 1rem;
-  color: #333;
-}
-
-.linkedin_link {
-  font-size: 0.9rem;
-  color: #0077b5;
-  text-decoration: none;
-}
-
-.linkedin_link:hover {
-  text-decoration: underline;
-}
-
-.scroll_button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  transition: background-color 0.3s;
-}
-
-.scroll_button:hover {
-  background-color: #f0f0f0;
-}
-
-.scroll_button.left {
-  left: 0;
-}
-
-.scroll_button.right {
-  right: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .team_member {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-} */
-
-
-
 .team_main {
   width: 100%;
   background-color: #f8f8f8;
@@ -153,14 +18,11 @@
 }
 
 .title_decorates {
-  
   background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
- 
   height: 0.15rem;
-  width: 55vh;
-margin-left: 80vh;
-margin-top:0vh;
-margin: 0 auto 3rem auto;
+  width: 40vw; /* Set width in viewport units for responsiveness */
+  max-width: 55vh; /* Maximum width constraint */
+  margin: 0 auto 3rem auto; /* Center align with margins */
 }
 
 .team_grid_wrapper {
@@ -271,7 +133,8 @@ margin: 0 auto 3rem auto;
   }
 
   .title_decorates {
-    width: 50vh; /* Adjusted width of title decoration */
+    width: 45vw; /* Responsive width adjustment */
+    max-width: 50vh; /* Maximum width constraint */
   }
 
   .team_grid_wrapper {
@@ -293,7 +156,8 @@ margin: 0 auto 3rem auto;
   }
 
   .title_decorates {
-    width: 45vh; /* Adjust width of title decoration */
+    width: 50vw; /* Adjust width for responsiveness */
+    max-width: 45vh; /* Maximum width constraint */
   }
 
   .team_grid {
@@ -326,7 +190,8 @@ margin: 0 auto 3rem auto;
   }
 
   .title_decorates {
-    width: 35vh; /* Smaller width for title decoration */
+    width: 60vw; /* Adjust width for smaller screens */
+    max-width: 35vh; /* Maximum width constraint */
   }
 
   .team_grid {
