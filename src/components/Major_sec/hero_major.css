@@ -40,7 +40,7 @@ section.hero_major {
 
 .hero_major .title_decoration {
     width: 55vh;
-    height: 0.25rem; 
+    height: 0.15rem; 
     background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
     color: transparent;
     margin: 1rem 0;

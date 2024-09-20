@@ -16,7 +16,7 @@ const Hero_major = () => {
         <h2>Major Focus Areas</h2>
         <div
           className="title_decoration"
-          style={{ height: "0.25rem", width: "40vh", marginLeft: "1rem" }}
+          // style={{ height: "0.25rem", width: "40vh", marginLeft: "1rem" }}
         >
           {/* Decoration element */}
         </div>
@@ -31,7 +31,7 @@ const Hero_major = () => {
         <h2>Functions</h2>
         <div
           className="title_decoration"
-          style={{ height: "0.25rem", width: "40vh", marginLeft: "1rem"  }}
+          // style={{ height: "0.25rem", width: "40vh", marginLeft: "1rem"  }}
         >
           {/* Decoration element */}
         </div>

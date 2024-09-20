@@ -147,6 +147,9 @@
     background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
     color: transparent;
     margin: 1rem auto; 
+   
+    height: 0.15rem;
+     width: 50vh
 }
 
 .idea-section {
