@@ -193,6 +193,11 @@
 .title_decorate {
     background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
     color: transparent;
+     height: 0.15rem;
+      width: 41vh;
+    margin-left: 66vh;
+    margin-top:0vh;
+
 }
 
 /* Responsive Adjustments */
