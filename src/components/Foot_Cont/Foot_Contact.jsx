@@ -17,16 +17,15 @@ const Footer_Cont = () => {
         <div className="footer_section">
           <h3>President</h3>
           <p>
-            Prof <br />
-            Director, IIIT DELHI<br />
+            Prof Pankaj Vajpayee <br />
             President, IIC, IIIT DELHI<br />
-            <a href="mailto:director.iith.ac.in">director.iiitd.ac.in</a>
+            <a href="mailto:director.iiitd.ac.in">director.iiitd.ac.in</a>
           </p>
         </div>
         <div className="footer_section">
           <h3>Contact Us</h3>
           <p>
-            <strong>Email:</strong> <a href="mailto:info@iiitd.ac.in">info@iiitd.ac.in</a><br />
+            <strong>Email:</strong> <a href="mailto:iic@iiitd.ac.in">iic@iiitd.ac.in</a><br />
             <strong>Phone:</strong> +91-011-71985300, +91-011-26907400-7404 (5 lines)<br />
             <strong>Fax:</strong> +91-11-26907405
           </p>
@@ -34,7 +33,11 @@ const Footer_Cont = () => {
         <div className="footer_section">
           <h3>Quick Links</h3>
           <p>
-            <a href="https://iic.mic.gov.in/">MOE Innovation Cell</a>
+            <a href="https://iic.mic.gov.in/">MOE Innovation Cell</a><br />
+            {/* Add the JOIN US button below */}
+            <button className="join_us_button" onClick={() => window.open("https://forms.gle/X4M4mea5xqXwwLRe6", "_blank")}>
+              JOIN US
+            </button>
           </p>
         </div>
       </div>

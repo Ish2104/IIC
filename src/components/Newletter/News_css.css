@@ -69,7 +69,7 @@
   background-color: #45a049; 
 } */
 
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 
 
 .news-container {
@@ -82,6 +82,7 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .news-title {

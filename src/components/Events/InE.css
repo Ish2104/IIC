@@ -1,7 +1,12 @@
+/* Import slick-carousel styles */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
 .ine-events {
-    max-width: 1200px; 
-    margin: 0 auto; 
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 2rem 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .ine-title {
@@ -11,35 +16,128 @@
     margin-bottom: 0.5rem;
 }
 
-.ine-event-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 1.5rem; 
+.title_decorate {
+    background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
+    color: transparent;
+    height: 0.15rem;
+    width: 41vh; /* Relative unit */
+    margin: 0 auto; /* Center the element */
+    margin-top: 2vh; /* Adjust top margin */
+    margin-bottom: 10vh; /* Adjust bottom margin */
 }
 
+/* Carousel Styles */
+.slick-slider {
+    position: relative;
+    margin-bottom: 30px;
+    user-select: none;
+    touch-action: pan-y;
+}
+
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.slick-slide.slick-active {
+    display: block;
+    opacity: 1;
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #ccc;
+    color: #333;
+    border-radius: 50%;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background: #f94521;
+}
+
+.slick-prev {
+    left: 10px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 10px;
+    z-index: 1;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #bbb;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #f94521;
+}
+
+/* Event Card Styles */
 .ine-event-card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 100%; /* Adjust width for responsiveness */
-    margin: 0 auto; /* Center cards */
+    width: 90%; /* Adjusted width for responsive carousel */
+    max-width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.ine-event-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+.ine-event-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
 
 .ine-event-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .ine-event-info {
     padding: 1rem;
     text-align: center;
+    flex: 1;
 }
 
 .ine-event-info h3 {
@@ -69,8 +167,9 @@
 }
 
 .session-btn {
-    background-color: #e4bb92;
+    background-color: rgb(255, 85, 0);
     color: #fff;
+    text-decoration: none;
 }
 
 .detail-btn {
@@ -80,112 +179,88 @@
 
 .ine-btn:hover {
     opacity: 0.8;
-}
+    text-decoration: none;
 
-.pagination-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.title_decorate {
-    background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
-    color: transparent;
-    height: 0.15rem;
-    width: 41vh; /* Relative unit */
-    margin: 0 auto; /* Center the element */
-    margin-top: 2vh; /* Adjust top margin */
-    margin-bottom: 10vh; /* Adjust bottom margin */
 }
 
 /* Responsive Adjustments */
 @media screen and (max-width: 1024px) {
     .ine-events {
-        padding: 1.5rem 1rem; /* Adjust padding */
+        padding: 1.5rem 1rem;
     }
 
     .ine-title {
-        font-size: 2rem; /* Reduce title size */
+        font-size: 2rem;
     }
 
-    .ine-event-grid {
-        gap: 1rem; /* Reduce gap */
+    .ine-event-card {
+        max-width: 250px;
     }
 
     .ine-event-info h3 {
-        font-size: 1.4rem; /* Adjust heading size */
+        font-size: 1.4rem;
     }
 
     .ine-event-info p {
-        font-size: 0.95rem; /* Adjust paragraph size */
+        font-size: 0.95rem;
     }
 
     .title_decorate {
-        width: 30vh; /* Adjust width */
-        margin-bottom: 8vh; /* Adjust bottom margin */
+        width: 30vh;
+        margin-bottom: 8vh;
     }
 }
 
 @media screen and (max-width: 768px) {
     .ine-events {
-        padding: 1rem 0.5rem; /* Further reduce padding */
+        padding: 1rem 0.5rem;
     }
 
     .ine-title {
-        font-size: 1.8rem; /* Smaller title */
-    }
-
-    .ine-event-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
-        gap: 1rem; /* Smaller gap */
+        font-size: 1.8rem;
     }
 
     .ine-event-card {
-        max-width: 90%; /* Adjust card width */
+        max-width: 200px;
     }
 
     .ine-event-info h3 {
-        font-size: 1.3rem; /* Smaller heading */
+        font-size: 1.3rem;
     }
 
     .ine-event-info p {
-        font-size: 0.9rem; /* Smaller paragraph */
+        font-size: 0.9rem;
     }
 
     .title_decorate {
-        width: 25vh; /* Adjust width */
-        margin-bottom: 6vh; /* Adjust bottom margin */
+        width: 25vh;
+        margin-bottom: 6vh;
     }
 }
 
 @media screen and (max-width: 480px) {
     .ine-events {
-        padding: 0.5rem 0.5rem; /* Minimum padding */
+        padding: 0.5rem 0.5rem;
     }
 
     .ine-title {
-        font-size: 1.6rem; /* Smaller title */
-    }
-
-    .ine-event-grid {
-        grid-template-columns: 1fr; /* Single column for small screens */
-        gap: 0.75rem; /* Smaller gap */
+        font-size: 1.6rem;
     }
 
     .ine-event-card {
-        max-width: 100%; /* Full width card */
+        width: 100%;
     }
 
     .ine-event-info h3 {
-        font-size: 1.2rem; /* Smaller heading */
+        font-size: 1.2rem;
     }
 
     .ine-event-info p {
-        font-size: 0.85rem; /* Smaller paragraph */
+        font-size: 0.85rem;
     }
 
     .title_decorate {
-        width: 20vh; /* Smaller width */
-        margin-bottom: 4vh; /* Adjust bottom margin */
+        width: 20vh;
+        margin-bottom: 4vh;
     }
 }

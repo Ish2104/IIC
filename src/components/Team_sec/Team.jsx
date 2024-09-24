@@ -18,7 +18,9 @@ const teamMembers = [
   { name: "Dr. Pravesh Biyani", img: mem5, linkedin: "https://www.linkedin.com/in/pravesh-biyani/" },
   { name: "Dr. Jaspreet Kaur", img: mem6, linkedin: "https://www.linkedin.com/in/jaspreet-kaur/" },
   { name: "Twisha Kacker", img: mem7, linkedin: "https://www.linkedin.com/in/twisha-kacker/" },
-  { name: "Kumar Gurusahai", img: mem8, linkedin: "https://www.linkedin.com/in/kumar-gurusahai/" }
+  { name: "Kumar Gurusahai", img: mem8, linkedin: "https://www.linkedin.com/in/kumar-gurusahai/" },
+  { name: "Aman Ranjan", img: mem8, linkedin: "https://www.linkedin.com/in/kumar-gurusahai/" }
+
 ];
 
 const Team = () => {

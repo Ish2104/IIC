@@ -90,6 +90,8 @@
 
 /*RESPONSIVE*/
 
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -100,6 +102,7 @@
     height: 100vh; /* Full viewport height */
     padding: 1rem; /* Add padding */
     box-sizing: border-box; /* Include padding in width/height */
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .hero-image {
@@ -155,16 +158,19 @@
 
 .hero-content h1 {
     font-size: 2.5rem; 
-    color: #333;
+    color: #060100dc;
+
     margin-bottom: 1rem; 
 }
 
 .hero-content p {
     font-size: 1.1rem; 
     color: #555; 
+
     line-height: 1.6; 
     margin: 0; 
     text-align: justify;
+    
 }
 
 /* Responsive Adjustments */

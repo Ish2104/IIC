@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
 .hero-major {
     width: 100%; /* Ensure full width */
     background-image: url('../../images/iicbanner.jpg'); 
@@ -16,6 +18,7 @@
     align-items: center; /* Center vertically */
     box-sizing: border-box; /* Include padding in width/height */
     min-height: 50vh; /* Ensure the section has a minimum height */
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 section.hero_major {
