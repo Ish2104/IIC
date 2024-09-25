@@ -167,19 +167,21 @@
 }
 
 .session-btn {
-    background-color: rgb(255, 85, 0);
+    background-color: #f94521;
     color: #fff;
     text-decoration: none;
 }
 
 .detail-btn {
-    background-color: rgb(255, 85, 0);
+    background-color: #f94521;
     color: #fff;
 }
 
 .ine-btn:hover {
     opacity: 0.8;
     text-decoration: none;
+    background-color:#eb865b;;
+
 
 }
 

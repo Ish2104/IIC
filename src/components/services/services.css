@@ -174,7 +174,7 @@
     padding: 10px 20px;
     font-size: 1rem;
     color: #fff;
-    background-color: #eb865b;
+    background-color:#f94521;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -182,7 +182,7 @@
 }
 
 .yes-button:hover {
-    background-color: #f94521;
+    background-color:#eb865b;;
 }
 
 /* Responsive Design Adjustments */

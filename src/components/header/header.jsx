@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './header.css'; 
 import { Link, animateScroll as scroll } from 'react-scroll';
 import iic_logo from "../../images/iiclogo_bew.png";
-import second_logo from "../../images/iiitd_img.png"; // Import second logo
+import second_logo from "../../images/iiitd_img.png";
+import yukti_logo from "../../images/yukti.png";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,9 +14,8 @@ const Header = () => {
 
     return (
         <header className="header">
-            <div className='temp'>
+            <div className="temp">
                 <div className="logo">
-                    {/* Display both logos */}
                     <img src={iic_logo} alt="IIC Logo" className="iic-logo" />
                     <img src={second_logo} alt="Second Logo" className="second-logo" />
                 </div>
@@ -33,6 +33,10 @@ const Header = () => {
                     <div className="btn">Contact Us</div>
                 </Link>
             </nav>
+            {/* Separate Yukti logo placed outside of the options */}
+            <a href="https://yukti.mic.gov.in/" target="_blank" rel="noopener noreferrer" className="yukti-logo-container">
+                <img src={yukti_logo} alt="Yukti Portal" className="yukti-logo" />
+            </a>
         </header>
     );
 };

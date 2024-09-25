@@ -10,7 +10,6 @@
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.2);
     height: 120px;
     font-family: 'Source Sans Pro', sans-serif;
-    
 }
 
 .btn {
@@ -34,7 +33,7 @@
 
 .logo {
     display: flex;
-    flex-direction: row; /* Ensure the logos are side by side */
+    flex-direction: row;
     align-items: center;
     padding-left: 0.5rem;
     padding-top: 1rem;
@@ -44,26 +43,26 @@
 .logo img {
     height: 60px;
     width: auto;
-    padding-right: 2rem; /* Spacing between the two logos */
+    padding-right: 2rem;
 }
 
 .iic-logo {
-    padding-left: 0rem; /* Optional: adjust specific padding for the IIC logo */
+    padding-left: 0rem;
 }
 
 .second-logo {
-    padding-left: 0rem; /* Adjust padding for the second logo if needed */
+    padding-left: 0rem;
 }
 
 .options {
     display: flex;
-    margin-left: auto; 
-    margin-right: 15%; 
+    margin-left: auto;
     gap: 1.5rem;
 }
 
 .options.open {
     display: flex;
+    flex-direction: column;
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
@@ -91,6 +90,22 @@
     display: none;
 }
 
+/* Yukti logo outside options */
+.yukti-logo-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    margin-left: 4rem;
+
+}
+
+.yukti-logo {
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
     .header {
         flex-direction: column;
@@ -111,12 +126,22 @@
     }
 
     .logo img {
-        height: 150px; /* Adjust logo size on smaller screens */
+        height: 150px;
         padding-left: 1rem;
         margin-left: 0;
     }
 
     .second-logo {
-        padding-left: 1rem; /* Adjust spacing on smaller screens */
+        padding-left: 1rem;
+    }
+
+    .yukti-logo {
+        height: 150px;
+    }
+
+    .yukti-logo-container {
+        justify-content: center;
+        margin-right: 0;
+        padding-top: 10px;
     }
 }

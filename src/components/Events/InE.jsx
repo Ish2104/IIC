@@ -16,6 +16,11 @@ import FintechImage from '../../images/Fintech.png';
 import VcsImage from '../../images/Vcs.png';
 import BharatImage from '../../images/Bharat.png';
 import AdImage from '../../images/Ad.png';
+import Afro from '../../images/Afro.png';
+import Wit from '../../images/Wit.png';
+import Micro from '../../images/Micro.png';
+import Cam from '../../images/Cam.png';
+
 
 import './InE.css';
 
@@ -135,6 +140,40 @@ const eventsData = [
     image: AdImage,
     pdf: '/documents/Ad.pdf',
   },
+  {
+    id: 17,
+    title: 'Afro Asian Conference',
+    date: '6 July 2024',
+    image: Afro,
+    pdf: '/documents/Afro.pdf',
+  },
+  {
+    id: 18,
+    title: 'Witnessing Disaster',
+    date: '6-10 August 2024',
+    image: Wit,
+    pdf: '/documents/Wit.pdf',
+  },
+  {
+    id: 19,
+    title: 'Micro-eco of Irrigation',
+    date: '9 August 2024',
+    image: Micro,
+    pdf: '/documents/Micro.pdf',
+  },
+  {
+    id: 20,
+    title: 'Campus Investment',
+    date: '9 August 2024',
+    image: Cam,
+    pdf: '/documents/Cam.pdf',
+  },
+
+
+
+
+
+
 ];
 
 const EventCarousel = () => {

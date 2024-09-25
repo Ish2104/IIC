@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
+/* General Styles */
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Statistics Section */
+.statistics-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 80px 80px;
+  background-color: rgba(244, 244, 244, 0.9); /* Light background with transparency */
+  background-image: url('../../images/iicbanner.jpg'); /* Add your background image path here */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  text-align: center;
+  border-radius: 10px; /* Optional: round the corners */
+}
+
+/* Heading Styles */
+.statistics-section h2 {
+  font-size: 2.5rem;
+  color:  #f4f4f4;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* Statistics Grid Layout */
+.statistics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding-right: 10px;
+}
+
+/* Individual Stat Item */
+.stat-item {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.stat-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons */
+.stat-icon {
+  font-size: 2.5rem;
+  color: #f94521;
+  margin-bottom: 10px;
+}
+
+/* Number in Stat Item */
+.stat-item h3 {
+  font-size: 3rem;
+  color: #f94521;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Title/Description in Stat Item */
+.stat-item p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0 0;
+}
+
+/* Extra Info - Appears on hover */
+.extra-info {
+  display: none;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.stat-item:hover .extra-info {
+  display: block;
+}
+
+.tit_decoration {
+  width: 75vh;
+  height: 0.15rem; 
+  background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
+  color: transparent;
+  margin-left: 20rem;
+  margin-bottom: 5rem;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1600px) {
+  .statistics-section {
+    max-width: 1200px;
+  }
+  .statistics-section h2 {
+    font-size: 2.8rem;
+  }
+  .statistics-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .statistics-section {
+    margin: 50px auto;
+  }
+  .statistics-section h2 {
+    font-size: 2.2rem;
+  }
+  .statistics-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .statistics-section {
+    width: 95%;
+    margin: 40px auto;
+  }
+  .statistics-section h2 {
+    font-size: 1.8rem;
+  }
+  .statistics-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .statistics-section {
+    width: 100%;
+    margin: 30px auto;
+  }
+  .statistics-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .statistics-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+}

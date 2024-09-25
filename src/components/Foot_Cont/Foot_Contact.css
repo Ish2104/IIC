@@ -45,7 +45,7 @@
 
 /* JOIN US button styling */
 .join_us_button {
-  background-color:  #f1562c; 
+  background-color: #f94521; 
   color: #ffffff; 
   border: none;
   padding: 10px 20px;
@@ -58,7 +58,7 @@
 }
 
 .join_us_button:hover {
-  background-color: #e04500; 
+  background-color: #eb865b;; 
 }
 
 .footer_bottom {
