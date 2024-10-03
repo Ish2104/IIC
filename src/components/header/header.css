@@ -23,14 +23,6 @@
     margin-bottom: -0.5rem;
 }
 
-.temp {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
 .logo {
     display: flex;
     flex-direction: row;
@@ -46,7 +38,8 @@
     padding-right: 2rem;
 }
 
-.iic-logo, .second-logo {
+.iic-logo,
+.second-logo {
     padding-left: 0rem;
 }
 
@@ -101,27 +94,26 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+/* Responsive adjustments - below 1200px */
+@media screen and (max-width: 1200px) {
     .header {
-        flex-direction: column;
-        justify-content: center;
+        padding: 0.5rem 1rem;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        height: auto;
-        padding: 1rem 0;
     }
 
-    .logo {
-        margin-left: 0;
-        padding-left: 0;
+    .logo img,
+    .yukti-logo {
+        height: 80px; /* Adjust logo size */
     }
 
-    .logo img {
-        height: 50px;
+    .yukti-logo-container {
+        margin-right: 1rem;
     }
 
     .hamburger-icon {
         display: block;
-        margin-left: auto;
         padding-right: 1rem;
     }
 
@@ -135,37 +127,122 @@
         gap: 1rem;
         align-items: center;
     }
-
-    .btn {
-        padding: 0.4rem 0.8rem;
-    }
-
-    .yukti-logo-container {
-        justify-content: center;
-        margin: 1rem 0;
-    }
-
-    .yukti-logo {
-        height: 80px;
-    }
 }
 
-@media screen and (max-width: 480px) {
+/* Responsive adjustments - below 992px */
+@media screen and (max-width: 992px) {
     .header {
+        flex-direction: row;
+        justify-content: space-between;
         padding: 0.5rem;
     }
 
     .logo img {
+        height: 70px;
+    }
+
+    .yukti-logo {
+        height: 70px;
+    }
+
+    .yukti-logo-container {
+        margin-right: 0.5rem;
+    }
+}
+
+/* Responsive adjustments - below 768px */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 0.5rem 0.5rem;
+        justify-content: space-between;
+    }
+
+    .logo img,
+    .yukti-logo {
+        height: 50px;
+    }
+
+    .hamburger-icon {
+        display: block;
+        margin-left: auto;
+    }
+
+    .options {
+        display: none;
+    }
+
+    .options.open {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+/* Responsive adjustments - below 576px */
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 0.4rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo img,
+    .yukti-logo {
         height: 40px;
-        padding-right: 1rem;
     }
 
     .btn {
         padding: 0.3rem 0.6rem;
-        margin-top: 0;
     }
 
+    .hamburger-icon {
+        padding-right: 0.5rem;
+    }
+
+    .options.open {
+        gap: 0.8rem;
+    }
+}
+
+/* Specific changes for 360px width */
+@media screen and (max-width: 400px) {
+    .header {
+        padding: 0.3rem;
+        flex-direction: column; /* Stack elements vertically on small screens */
+        justify-content: space-between;
+    }
+
+    .logo,
+    .yukti-logo-container {
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.5rem;
+    }
+
+    .logo img,
     .yukti-logo {
-        height: 60px;
+        height: 30px; /* Smaller logo size for 360px */
+    }
+
+    .hamburger-icon {
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .options {
+        display: none;
+    }
+
+    .options.open {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        align-items: center;
+    }
+
+    .btn {
+        padding: 0.3rem 0.6rem;
     }
 }

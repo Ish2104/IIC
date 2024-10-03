@@ -26,12 +26,13 @@ body {
   height: 0.15rem;
   background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
   margin: 0 auto 3rem auto;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
 }
 
 .category-filters {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+
 }
 
 .filter-button {

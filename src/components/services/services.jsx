@@ -54,7 +54,7 @@ const Services = () => {
 
       <div className="idea-section">
         <p>Do you have new ideas?</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSefvXQtLEjxzxtfWFAaXZgorZofOS2zO8ScsXUwmxdzFm4yNw/viewform" className="yes-button">YES</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScODPy0LM7LI0R9Q3lXnD--Z51yodTnNKb3k0MpM1AZB9gQrg/viewform?usp=sf_link" className="yes-button">YES</a>
       </div>
     </div>
   );
