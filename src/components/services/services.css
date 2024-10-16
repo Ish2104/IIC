@@ -1,103 +1,16 @@
-/* .services-section {
-    background-color: #f8f8f8;
-    padding: 50px;
-    text-align: center;
-    margin-bottom: 0rem;
-}
-
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.service {
-    padding: 1.5rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.service h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.service p {
-    font-size: 1rem;
-    color: #666;
-}
-
-.services-section h2 {
-    font-size: 2.5rem; 
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 1rem; 
-}
-
-.services-section p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 1.5rem; 
-}
-
-.title_decoration {
-    background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
-    color: transparent;
-    margin: 1rem auto; 
-
-.idea-section {
-    margin-top: 2rem;
-    text-align: center;
-}
-
-.idea-section p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.yes-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #eb865b;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none; 
-}
-
-.yes-button:hover {
-    background-color: #f94521;
-}
-
-
-@media screen and (max-width: 768px) {
-    .services-container {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .services-container {
-        grid-template-columns: 1fr; 
-    }
-} */
-
-/*RESPONSIVE*/
-
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 
 .services-section {
-    background-color: #f8f8f8;
-    padding: 50px 20px; /* Adjust padding for better responsiveness */
+    background-image: url('../../images/Tech_bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 50px 20px;
     text-align: center;
     margin-bottom: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    color: #ffffff; /* Text color for visibility */
 }
 
 .services-container {
@@ -105,16 +18,21 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 1.5rem;
-    max-width: 1200px; /* Center the container */
-    margin: 1.5rem auto; /* Center the container */
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Background with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .service {
     padding: 1.5rem;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
 }
 
 .service:hover {
@@ -122,10 +40,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.service h3 {
-    font-size: 1.4rem; /* Increase font size for better readability */
-    color: #333;
+.service-icon {
+    font-size: 2rem;
+    color: #f94521;
     margin-bottom: 0.5rem;
+}
+
+.service h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #333;
 }
 
 .service p {
@@ -135,140 +59,49 @@
 }
 
 .services-section h2 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     font-weight: 600;
-   
-    
-    color: #060100dc;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .services-section p {
     font-size: 1rem;
-    color: #666;
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
 }
 
 .title_decoration {
     background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
     color: transparent;
-    margin: 1rem auto; 
-   
+    margin: 1rem auto;
     height: 0.15rem;
-     width: 50vh
+    width: 50vh;
 }
 
 .idea-section {
     margin-top: 2rem;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .idea-section p {
     font-size: 1.2rem;
-    color: #333;
     margin-bottom: 1rem;
+    color: #ffffff;
 }
 
 .yes-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 1rem;
-    color: #fff;
-    background-color:#f94521;
+    color: #ffffff;
+    background-color: #f94521;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none; 
-}
-
-.yes-button:hover {
-    background-color:#eb865b;;
-}
-
-/* Responsive Design Adjustments */
-@media screen and (max-width: 1024px) {
-    .services-container {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 1rem; /* Reduce gap for smaller screens */
-        margin: 1rem auto; /* Adjust margin */
-    }
-
-    .service h3 {
-        font-size: 1.2rem; /* Adjust heading size */
-    }
-
-    .service p {
-        font-size: 0.95rem; /* Adjust paragraph size */
-    }
-
-    .services-section h2 {
-        font-size: 2rem; /* Adjust section heading */
-    }
-
-    .services-section p {
-        font-size: 0.95rem; /* Adjust section paragraph */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .services-container {
-        grid-template-columns: 1fr; /* Single column layout */
-        gap: 1rem; /* Adjust gap */
-        margin: 1rem auto; /* Adjust margin */
-    }
-
-    .service {
-        padding: 1rem; /* Reduce padding */
-    }
-
-    .service h3 {
-        font-size: 1.1rem; /* Smaller heading */
-    }
-
-    .service p {
-        font-size: 0.9rem; /* Smaller paragraph */
-    }
-
-    .services-section {
-        padding: 30px 10px; /* Reduce padding */
-    }
-
-    .services-section h2 {
-        font-size: 1.8rem; /* Smaller section heading */
-    }
-
-    .services-section p {
-        font-size: 0.9rem; /* Smaller section paragraph */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .services-section {
-        padding: 20px 5px; /* Further reduce padding */
-    }
-
-    .services-container {
-        grid-template-columns: 1fr; /* Single column */
-        gap: 0.5rem; /* Reduce gap */
-    }
-
-    .service {
-        padding: 0.75rem; /* Smaller padding */
-    }
-
-    .service h3 {
-        font-size: 1rem; /* Smaller heading */
-    }
-
-    .service p {
-        font-size: 0.85rem; /* Smaller paragraph */
-    }
-
-    .services-section h2 {
-        font-size: 1.6rem; /* Smaller section heading */
-    }
-
-    .services-section p {
-        font-size: 0.85rem; /* Smaller section paragraph */
-    }
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 
 }

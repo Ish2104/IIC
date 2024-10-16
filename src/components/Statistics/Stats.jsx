@@ -39,18 +39,14 @@ const IICStatistics = () => {
   return (
     <div className="statistics-section">
       <h2>Impact and Statistics</h2>
-      <div
-          className="tit_decoration"
-        >
-          {/* Decoration element */}
-        </div>
+      <div className="tit_decoration"></div>
       <div className="statistics-grid">
         {stats.map((stat, index) => (
           <div 
             key={index} 
             className="stat-item"
-            onClick={() => window.location.href = stat.link} // Redirect on click
-            style={{ cursor: 'pointer' }} // Change cursor to pointer for better UX
+            onClick={() => window.location.href = stat.link} 
+            style={{ cursor: 'pointer' }}
           >
             <FontAwesomeIcon icon={stat.icon} className="stat-icon" />
             <h3>

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
+import { LinkedIn } from '@mui/icons-material'; // Import LinkedIn icon from Material UI
 import './Team_new.css';
 import mem1 from "../../images/pankajvajpayee.jpg";
 import mem2 from "../../images/deepika.jpg";
@@ -9,18 +10,19 @@ import mem5 from "../../images/pravesh.jpg";
 import mem6 from "../../images/jaspreet.jpg";
 import mem7 from "../../images/twisha.jpg";
 import mem8 from "../../images/gurusahai.jpg";
+import mem9 from "../../images/aman.png";
+
 
 const teamMembers = [
-  { name: "Dr. Pankaj Vajpayee", img: mem1, linkedin: "https://www.linkedin.com/in/pankaj-vajpayee/" },
-  { name: "Dr. Deepika Bhaskar", img: mem2, linkedin: "https://www.linkedin.com/in/deepika-bhaskar/" },
-  { name: "Mr. Anupam Saronwala", img: mem3, linkedin: "https://www.linkedin.com/in/anupam-saronwala/" },
-  { name: "Dr. Anuj Grover", img: mem4, linkedin: "https://www.linkedin.com/in/anuj-grover/" },
-  { name: "Dr. Pravesh Biyani", img: mem5, linkedin: "https://www.linkedin.com/in/pravesh-biyani/" },
-  { name: "Dr. Jaspreet Kaur", img: mem6, linkedin: "https://www.linkedin.com/in/jaspreet-kaur/" },
-  { name: "Twisha Kacker", img: mem7, linkedin: "https://www.linkedin.com/in/twisha-kacker/" },
-  { name: "Kumar Gurusahai", img: mem8, linkedin: "https://www.linkedin.com/in/kumar-gurusahai/" },
-  { name: "Aman Ranjan", img: mem8, linkedin: "https://www.linkedin.com/in/kumar-gurusahai/" }
-
+  { name: "Dr. Pankaj Vajpayee", img: mem1, linkedin: "https://www.linkedin.com/in/pankaj-vajpayee-24ba511/" },
+  { name: "Dr. Deepika Bhaskar", img: mem2, linkedin: "https://www.linkedin.com/in/deepika-bhaskar-4b4007312/" },
+  { name: "Mr. Anupam Saronwala", img: mem3, linkedin: "https://www.linkedin.com/in/anupamsaronwala/" },
+  { name: "Dr. Anuj Grover", img: mem4, linkedin: "https://www.linkedin.com/in/anujgrover/" },
+  { name: "Dr. Pravesh Biyani", img: mem5, linkedin: "https://www.linkedin.com/in/praveshbiyani/" },
+  { name: "Dr. Jaspreet Kaur", img: mem6, linkedin: "" },
+  { name: "Twisha Kacker", img: mem7, linkedin: "https://www.linkedin.com/in/twisha-kacker-4a318424b/" },
+  { name: "Kumar Gurusahai", img: mem8, linkedin: "https://www.linkedin.com/in/kumar-gurusahai-075209241/" },
+  { name: "Aman Ranjan", img: mem9, linkedin: "https://www.linkedin.com/in/aman-ranjan-a8853320b/" }
 ];
 
 const Team = () => {
@@ -107,7 +109,7 @@ const Team = () => {
                 </div>
                 <h3>{member.name}</h3>
                 <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="linkedin_link">
-                  LinkedIn
+                  <LinkedIn />
                 </a>
               </div>
             ))}

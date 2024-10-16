@@ -23,8 +23,9 @@ function App() {
       {/* <HerosSection /> */}
       <Main />
       <Services />
-      <Major />
+      
       <InE />
+      <Major />
       <Team />
       <Gallery />
       {/* <Cont /> */}

@@ -18,8 +18,8 @@ const Footer_Cont = () => {
           <h3>President</h3>
           <p>
             Prof Pankaj Vajpayee <br />
-            President, IIC, IIIT DELHI<br />
-            <a href="mailto:director.iiitd.ac.in">director.iiitd.ac.in</a>
+            Dean of Corporate Relations & Entrepreneurship (DCRE)<br />
+            <a href="mailto:director.iiitd.ac.in"> dcre@iiitd.ac.in</a>
           </p>
         </div>
         <div className="footer_section">
