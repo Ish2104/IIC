@@ -11,7 +11,7 @@ const Services = () => {
 
   return (
     <div className="services-section">
-      <h2>IIC ACTIVITIES</h2>
+      <h2>IIC'S ACTIVITIES</h2>
 
       <div className="title_decoration"></div>
 

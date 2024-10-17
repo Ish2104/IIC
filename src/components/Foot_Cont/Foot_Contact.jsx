@@ -17,7 +17,7 @@ const Footer_Cont = () => {
         <div className="footer_section">
           <h3>President</h3>
           <p>
-            Prof Pankaj Vajpayee <br />
+            Dr. Pankaj Vajpayee <br />
             Dean of Corporate Relations & Entrepreneurship (DCRE)<br />
             <a href="mailto:director.iiitd.ac.in"> dcre@iiitd.ac.in</a>
           </p>
