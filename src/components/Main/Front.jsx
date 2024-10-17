@@ -14,6 +14,8 @@ const images = [
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [titleVisible, setTitleVisible] = useState(false);
+  const [descriptionVisible, setDescriptionVisible] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,6 +23,16 @@ const HeroSection = () => {
     }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    // Trigger the animations as soon as the component mounts
+    setTimeout(() => {
+      setTitleVisible(true);
+    }, 500); // Delay title animation slightly
+    setTimeout(() => {
+      setDescriptionVisible(true);
+    }, 1000); // Delay description animation slightly
   }, []);
 
   const handleNext = () => {
@@ -51,24 +63,21 @@ const HeroSection = () => {
         </button>
       </div>
 
-      <div className="hero-content">
+      <div className={`title-div ${titleVisible ? "slide-in-left" : ""}`}>
         <h1>Institute Innovation Council (IIC)</h1>
+      </div>
+      <div className={`description-div ${descriptionVisible ? "slide-in-right" : ""}`}>
         <p>
-         
           The Institute Innovation Council (IIC) is dedicated to fostering a
           vibrant culture of innovation and incubation among faculty and
           students at IIIT-D. Our mission is to drive creativity and
           entrepreneurial spirit, resulting in the establishment of successful
           startups. These ventures, promoted and owned by our talented faculty
           and students, showcase the innovative potential and collaborative
-          efforts within our community.By fostering collaboration and a proactive mindset, the IIC is dedicated to making IIIT-D a hub of innovation, where ideas are turned into reality, and the next generation of entrepreneurs is born.
-
-
-
-
-
-
-
+          efforts within our community. By fostering collaboration and a
+          proactive mindset, the IIC is dedicated to making IIIT-D a hub of
+          innovation, where ideas are turned into reality, and the next
+          generation of entrepreneurs is born.
         </p>
       </div>
     </div>

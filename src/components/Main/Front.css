@@ -1,49 +1,49 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 
 .hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: rgb(245, 238, 234);
     border-bottom: 2px solid rgb(234, 138, 27);
     overflow: hidden;
     height: 100vh; /* Full viewport height */
-    padding: 1rem; /* Add padding */
-    box-sizing: border-box; /* Include padding in width/height */
+    padding: 1rem;
+    box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
+    position: relative; /* Ensure relative positioning for inner elements */
 }
 
 .hero-image {
     position: relative;
     width: 80%;
-    max-height: 60%; /* Set max height */
+    max-height: 60%;
     overflow: hidden;
     margin-bottom: 2rem;
-    display: flex; /* Center image */
-    justify-content: center; /* Center image */
+    display: flex;
+    justify-content: center;
 }
 
 .hero-image img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 8px; /* Add rounded corners */
+    border-radius: 8px;
 }
 
 .prev, .next {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 10px; /* Reduce padding */
-    margin-top: -20px; /* Adjust for smaller buttons */
+    padding: 10px;
+    margin-top: -20px;
     color: white;
     background-color: rgba(0,0,0,0.5);
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    font-size: 20px; /* Reduce font size */
+    font-size: 20px;
     z-index: 20;
 }
 
@@ -55,124 +55,105 @@
     right: 10px;
 }
 
-.hero-content {
-    text-align: center;
-    margin: 0 auto;
-    padding: 2rem;
+.title-div, .description-div {
+    position: relative;
     width: 80%;
-    max-width: 800px; /* Set max-width */
-    background-color: rgba(255, 255, 255, 0.8); 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 800px;
+    margin: 1rem auto; /* Add margin to prevent overlap */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0; /* Start hidden */
 }
 
-.hero-content h1 {
-    font-size: 2.5rem; 
+.title-div {
+    z-index: 2; /* Ensure title is above the description */
+    animation: slideInLeft 1s ease-out forwards;
+    animation-delay: 0.5s; /* Delay the start of the animation */
+    background-color:rgb(231, 167, 95);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(15, 15, 15, 0.2);
+}
+
+.description-div {
+    z-index: 1; /* Ensure description is below the title */
+    animation: slideInRight 1s ease-out forwards;
+    animation-delay: 2s; /* Start after the title animation finishes */
+    background-color:transparent;
+    box-shadow: 0 4px 8px rgba(223, 105, 7, 0.2);
+}
+
+.title-div h1 {
+    font-size: 2.5rem;
     color: #060100dc;
-
-    margin-bottom: 1rem; 
+    margin: 0;
 }
 
-.hero-content p {
-    font-size: 1.1rem; 
-    color: #555; 
-
-    line-height: 1.6; 
-    margin: 0; 
+.description-div p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
     text-align: justify;
-    
+}
+
+/* Keyframes for the sliding animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* Responsive Adjustments */
 @media screen and (max-width: 1024px) {
     .hero-section {
-        height: auto; /* Adjust height for smaller screens */
         padding: 1rem;
     }
 
-    .hero-image {
-        width: 90%; /* Slightly larger width */
+    .title-div h1 {
+        font-size: 2rem; /* Adjust heading size for medium screens */
     }
 
-    .prev, .next {
-        font-size: 18px; /* Reduce size for navigation arrows */
-        padding: 8px; /* Reduce padding */
-    }
-
-    .hero-content {
-        width: 90%; /* Adjust width */
-        padding: 1.5rem; /* Adjust padding */
-    }
-
-    .hero-content h1 {
-        font-size: 2rem; /* Adjust heading size */
-    }
-
-    .hero-content p {
-        font-size: 1rem; /* Adjust paragraph size */
+    .description-div p {
+        font-size: 1rem; /* Adjust paragraph size for medium screens */
     }
 }
 
 @media screen and (max-width: 768px) {
-    .hero-section {
-        height: auto; /* Allow section to adjust height */
-        padding: 1rem; /* Add padding */
+    .title-div h1 {
+        font-size: 1.8rem; /* Adjust heading size for smaller screens */
     }
 
-    .hero-image {
-        width: 100%;
-        max-height: 50%; /* Adjust height */
-        margin-bottom: 1rem; /* Reduce margin */
-    }
-
-    .prev, .next {
-        font-size: 16px; /* Smaller font size for arrows */
-        padding: 6px; /* Reduce padding */
-    }
-
-    .hero-content {
-        width: 95%; /* Full width content */
-        padding: 1rem; /* Less padding */
-    }
-
-    .hero-content h1 {
-        font-size: 1.8rem; /* Smaller heading */
-    }
-
-    .hero-content p {
-        font-size: 0.9rem; /* Smaller paragraph */
-        line-height: 1.5; /* Adjust line height for readability */
+    .description-div p {
+        font-size: 0.9rem; /* Adjust paragraph size for smaller screens */
     }
 }
 
 @media screen and (max-width: 480px) {
-    .hero-section {
-        height: auto; /* Adjust height */
-        padding: 0.5rem; /* Less padding */
+    .title-div h1 {
+        font-size: 1.5rem; /* Smaller heading for very small screens */
     }
 
-    .hero-image {
-        width: 100%;
-        max-height: 40%; /* Smaller max height */
-        margin-bottom: 0.5rem; /* Less margin */
-    }
-
-    .prev, .next {
-        font-size: 14px; /* Smaller arrows */
-        padding: 4px; /* Smaller padding */
-    }
-
-    .hero-content {
-        width: 100%; /* Full width */
-        padding: 0.5rem; /* Smaller padding */
-    }
-
-    .hero-content h1 {
-        font-size: 1.5rem; /* Smaller heading */
-    }
-
-    .hero-content p {
-        font-size: 0.8rem; /* Smaller paragraph */
-        line-height: 1.4; /* Adjust line height for better fit */
+    .description-div p {
+        font-size: 0.8rem; /* Smaller paragraph for very small screens */
+        line-height: 1.4; /* Adjust line height for readability */
     }
 }

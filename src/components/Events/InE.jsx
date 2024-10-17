@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import OncosImage from '../../images/Oncos.png'; // Update the path to your image
+import OncosImage from '../../images/Oncos.png'; 
 import InternImage from '../../images/Intern.png';
 import DesignImage from '../../images/Design.png';
 import DesImage from '../../images/Des.png';
@@ -205,7 +205,7 @@ const EventCarousel = () => {
 
   return (
     <div className="ine-events">
-      <h2 className="ine-title">I & E Events</h2>
+      <h2 className="ine-title">Innovation & Entrepreneurship Events</h2>
       <div className="title_decorate"></div>
       <Slider {...settings}>
         {eventsData.map((event) => (

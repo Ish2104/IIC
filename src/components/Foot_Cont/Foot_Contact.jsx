@@ -42,7 +42,7 @@ const Footer_Cont = () => {
         </div>
       </div>
       <div className="footer_bottom"> 
-        <p>IIITD Website | Web Team</p>
+        <p>IIITD's Web Team</p>
       </div>
     </footer>
   );

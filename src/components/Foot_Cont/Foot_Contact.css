@@ -70,14 +70,14 @@
   padding-top: 10px;
 }
 
-/* Responsive Adjustments */
+/* responsiveness handling
 /* Large Desktop */
 @media screen and (max-width: 1440px) {
   .footer_content {
     gap: 15px; 
   }
   .footer_section {
-    flex: 1 1 220px; /* Slightly larger flex basis for large desktops */
+    flex: 1 1 220px; 
   }
 }
 
@@ -88,8 +88,8 @@
     gap: 15px; 
   }
   .footer_section {
-    flex: 1 1 220px; /* Adjust flex basis */
-    margin-left: 20px; /* Reduce margin for desktop */
+    flex: 1 1 220px; 
+    margin-left: 20px; 
   }
 }
 
@@ -100,7 +100,7 @@
     gap: 15px; 
   }
   .footer_section {
-    flex: 1 1 45%; /* Adjust flex basis for tablets */
+    flex: 1 1 45%;
     margin-left: 0; 
   }
 }
@@ -112,38 +112,38 @@
     gap: 10px;
   }
   .footer_section {
-    flex: 1 1 100%; /* Full width for large mobile devices */
+    flex: 1 1 100%;
     margin-left: 0; 
-    text-align: center; /* Center align text */
+    text-align: center; 
   }
   .footer_section h3 {
-    font-size: 16px; /* Slightly smaller heading */
+    font-size: 16px; 
   }
   .footer_section p {
-    font-size: 13px; /* Adjust text size */
+    font-size: 13px; 
   }
 }
 
 /* Small Mobile */
 @media screen and (max-width: 480px) {
   .footer {
-    padding: 20px 10px; /* Reduce padding for small screens */
+    padding: 20px 10px; 
   }
   .footer_content {
-    flex-direction: column; /* Stack sections vertically */
-    align-items: center; /* Center align items */
+    flex-direction: column; 
+    align-items: center; 
   }
   .footer_section {
-    margin-bottom: 15px; /* Reduce bottom margin */
+    margin-bottom: 15px; 
   }
   .footer_section h3 {
-    font-size: 14px; /* Smaller heading */
+    font-size: 14px; 
   }
   .footer_section p {
-    font-size: 12px; /* Smaller paragraph text */
+    font-size: 12px; 
   }
   .footer_bottom {
-    font-size: 12px; /* Smaller footer bottom text */
+    font-size: 12px; 
     padding-top: 5px; 
     margin-top: 15px; 
   }
@@ -152,23 +152,23 @@
 /* Extra Small Mobile */
 @media screen and (max-width: 360px) {
   .footer {
-    padding: 15px 5px; /* Further reduce padding */
+    padding: 15px 5px; 
   }
   .footer_content {
-    align-items: flex-start; /* Align items flex-start */
+    align-items: flex-start; 
   }
   .footer_section h3 {
-    font-size: 13px; /* Smaller heading */
+    font-size: 13px; 
   }
   .footer_section p {
-    font-size: 11px; /* Smaller paragraph text */
+    font-size: 11px; 
   }
   .footer_bottom {
-    font-size: 11px; /* Smaller footer bottom text */
+    font-size: 11px; 
     margin-top: 10px; 
   }
   .join_us_button {
-    padding: 8px 16px; /* Smaller button padding */
-    font-size: 13px; /* Smaller button text size */
+    padding: 8px 16px; 
+    font-size: 13px; 
   }
 }

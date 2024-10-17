@@ -166,12 +166,12 @@
 /* Responsive Adjustments */
 @media screen and (max-width: 1024px) {
   .team_section h2 {
-    font-size: 2rem; /* Adjusted title size */
+    font-size: 2rem; 
   }
 
   .title_decorates {
-    width: 45vw; /* Responsive width adjustment */
-    max-width: 50vh; /* Maximum width constraint */
+    width: 45vw; 
+    max-width: 50vh;
   }
 
   .team_grid_wrapper {
@@ -185,68 +185,68 @@
 
 @media screen and (max-width: 768px) {
   .team_main {
-    padding: 2rem 0; /* Reduce padding */
+    padding: 2rem 0; 
   }
 
   .team_section h2 {
-    font-size: 1.8rem; /* Smaller title */
+    font-size: 1.8rem; 
   }
 
   .title_decorates {
-    width: 50vw; /* Adjust width for responsiveness */
-    max-width: 45vh; /* Maximum width constraint */
+    width: 50vw; 
+    max-width: 45vh; 
   }
 
   .team_grid {
-    padding: 0 1rem; /* Add padding for scrolling */
+    padding: 0 1rem; 
   }
 
   .team_member {
-    width: 160px; /* Adjust width of member cards */
-    padding: 15px; /* Adjust padding */
-    margin: 0 8px; /* Adjust margin */
+    width: 160px; 
+    padding: 15px;
+    margin: 0 8px;
   }
 
   .team_image_container {
     width: 80px;
-    height: 80px; /* Adjust size of image container */
+    height: 80px;
   }
 
   .team_member h3 {
-    font-size: 0.9rem; /* Adjust font size */
+    font-size: 0.9rem; 
   }
 }
 
 @media screen and (max-width: 480px) {
   .team_main {
-    padding: 1rem 0; /* Minimum padding */
+    padding: 1rem 0; 
   }
 
   .team_section h2 {
-    font-size: 1.6rem; /* Smaller title */
+    font-size: 1.6rem;
   }
 
   .title_decorates {
-    width: 60vw; /* Adjust width for smaller screens */
-    max-width: 35vh; /* Maximum width constraint */
+    width: 60vw; 
+    max-width: 35vh; 
   }
 
   .team_grid {
-    padding: 0 0.5rem; /* Add padding for scrolling */
+    padding: 0 0.5rem; 
   }
 
   .team_member {
-    width: 140px; /* Adjust width of member cards */
-    padding: 10px; /* Adjust padding */
-    margin: 0 5px; /* Adjust margin */
+    width: 140px; 
+    padding: 10px;
+    margin: 0 5px;
   }
 
   .team_image_container {
     width: 70px;
-    height: 70px; /* Smaller image container */
-  }
+    height: 70px;
+    }
 
   .team_member h3 {
-    font-size: 0.8rem; /* Smaller font size */
+    font-size: 0.8rem; 
   }
 }
