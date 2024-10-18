@@ -120,7 +120,7 @@ body, html {
 
 /* Decoration Line */
 .tit_decoration {
-  width: 75vh;
+  width: 20vh;
   height: 0.15rem; 
   background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
   color: transparent;
