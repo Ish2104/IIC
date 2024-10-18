@@ -269,3 +269,36 @@
         margin-bottom: 4vh;
     }
 }
+@media screen and (max-width: 480px) {
+    .slick-dots {
+        bottom: -20px; /* Adjusted to move dots closer to the carousel */
+        width: auto; /* Allows dots to fit within the screen */
+        display: flex !important;
+        flex-wrap: wrap; /* Ensures dots move to the next line if needed */
+        justify-content: center;
+        padding: 0 10px; /* Adds some padding to prevent overflow */
+    }
+
+    .slick-dots li {
+        margin: 0 3px; /* Adjusts spacing between dots */
+    }
+
+    .slick-dots li button:before {
+        font-size: 10px; /* Slightly reduce dot size to fit smaller screens */
+    }
+}
+
+.slick-dots {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slick-dots {
+      bottom: -20px; /* Adjust this value to control the vertical position of the dots */
+    
+      display: flex;
+      justify-content: center;
+      margin-left: 60px;
+    }
+  }
+  
