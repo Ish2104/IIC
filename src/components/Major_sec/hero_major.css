@@ -37,13 +37,13 @@ section.hero_major {
     display: flex; /* Flex layout to place areas side by side */
     justify-content: space-between; /* Space between the two areas */
     max-width: 1200px; 
-    margin: 0 auto; /* Center the section */
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
     position: relative; /* Ensure it’s above the background */
     z-index: 2; /* Place above the background */
     animation: slideIn 1s ease-out; /* Apply slide-in animation */
-    overflow: hidden; /* Hide horizontal overflow */
 }
 
 @keyframes slideIn {
@@ -59,99 +59,45 @@ section.hero_major {
 
 .focus-area, .functions-area {
     flex: 1; /* Take equal width */
-    margin: 0 0.5rem; /* Reduce margin between the two areas */
+    margin: 0 0.5rem; /* Margin between the two areas */
     background-color: rgba(0, 0, 0, 0.85); /* Background color */
     border-radius: 5px; /* Rounded corners */
     padding: 1.5rem; /* Inner padding */
-    max-width: calc(100% - 1rem); /* Ensure each area does not exceed half the width minus margin */
-    box-sizing: border-box; /* Include padding in width calculations */
-    margin-left: 1rem;
-}
-
-.hero_major h2 {
-    margin-top: 1rem;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #fff; 
+    box-sizing: border-box; /* Ensure padding is included in total width */
+    min-width: 280px; /* Ensure a minimum width */
     text-align: left;
 }
-
-.hero_major .title_decoration {
-    width: 55vh;
-    height: 0.15rem; 
-    background: radial-gradient(circle at 7.5% 0%, #eb865b 0%, #f94521 100%);
-    color: transparent;
-    margin: 1rem 0;
+.focus-area h2 {
+    text-align: center;
+}
+.functions-area h2 {
+    text-align: center;
 }
 
-.hero_major ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    text-align: left;
+/* Adjust for larger screens */
+@media screen and (min-width: 769px) {
+    .focus-area, .functions-area {
+        max-width: calc(50% - 1rem); /* Expand the divs for larger screens */
+    }
 }
 
-.hero_major li {
-    font-size: 1.1rem;
-    color: #fff; 
-    margin-bottom: 0.5rem;
-    text-align: left;
-}
-
-/* Responsive Adjustments */
-@media screen and (max-width: 1024px) {
+/* Responsive Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
     .hero-major {
-        padding-top: 4rem;
+        padding-top: 4rem; /* Reduce padding */
         padding-bottom: 4rem; /* Reduce padding */
     }
 
     section.hero_major {
         flex-direction: column; /* Stack vertically on smaller screens */
         padding: 1.5rem; /* Reduce padding */
-        max-width: 800px; /* Adjust width */
-        margin: 0 auto; /* Center align */
-    }
-
-    .focus-area, .functions-area {
-        margin: 0; /* Remove margin for stacked layout */
-        width: 100%; /* Full width */
-        margin-left: 0.5rem;
-    }
-
-    .hero_major h2 {
-        font-size: 1.8rem; /* Reduce heading size */
-    }
-
-    .hero_major .title_decoration {
-        width: 40vh; /* Adjust decoration width */
-    }
-
-    .hero_major ul {
-        padding-left: 1.25rem; /* Adjust padding */
-    }
-
-    .hero_major li {
-        font-size: 1rem; /* Adjust font size */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hero-major {
-        padding-top: 3rem; /* Further reduce padding */
-        padding-bottom: 3rem;
-    }
-
-    section.hero_major {
-        padding: 0.75rem; /* Smaller padding */
         max-width: 90%; /* Use full width */
-        margin: 0 auto; /* Center align */
     }
 
     .focus-area, .functions-area {
-        margin: 0; /* Remove margin for stacked layout */
-        width: 100%; /* Full width */
-        margin-left: 0.5rem;
+        margin: 0 0; /* Remove margin for stacked layout */
+        width: calc(100% - 1rem); /* Full width with a little space for margin */
+        margin-left: 0.5rem; /* Move slightly to the right */
     }
 
     .hero_major h2 {
@@ -171,6 +117,7 @@ section.hero_major {
     }
 }
 
+/* Further adjustments for very small screens */
 @media screen and (max-width: 480px) {
     .hero-major {
         padding-top: 2rem; /* Minimum padding */
@@ -180,13 +127,12 @@ section.hero_major {
     section.hero_major {
         padding: 0.75rem; /* Minimum padding */
         max-width: 100%; /* Full width */
-        margin: 0 auto; /* Center align */
     }
 
     .focus-area, .functions-area {
         margin: 0; /* Remove margin for stacked layout */
-        width: 100%; /* Full width */
-        margin-left: 0.5rem;
+        width: calc(100% - 1rem); /* Full width */
+        margin-left: 0.5rem; /* Move slightly to the right */
     }
 
     .hero_major h2 {
