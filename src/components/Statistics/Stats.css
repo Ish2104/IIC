@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 
 /* General Styles */
-body {
+body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
+  width: 100%; /* Ensures full width */
   overflow-x: hidden; /* Prevent horizontal scroll */
   font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box; /* Include padding and border in element's width and height */
+}
+
+/* Apply box-sizing to all elements */
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 /* Parallax Background for Statistics Section */
@@ -19,14 +25,12 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* background: url('../../images/stats.jpg') no-repeat center center fixed; Fixed background for parallax effect */
   background: url('../../images/stat_3.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white; 
   padding: 60px 20px;
   z-index: 1;
 }
-
 
 .statistics-section::before {
   content: '';
@@ -42,9 +46,8 @@ body {
 /* Heading Styles */
 .statistics-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0; /* Reduced margin */
   text-transform: uppercase;
-  margin-top: 2rem;
 }
 
 /* Statistics Grid Layout */
@@ -53,8 +56,10 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px; /* Ensure it doesn't exceed this width */
   animation: slide-in 0.5s ease-out; /* Animation for the grid */
+  padding: 0 10px; /* Add padding to avoid content touching screen edges */
+  margin: 0 auto; /* Center the grid within its container */
 }
 
 /* Individual Stat Item */
@@ -66,6 +71,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   position: relative;
+  overflow: hidden; /* Prevent overflow from children */
 }
 
 .stat-item:hover {
