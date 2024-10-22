@@ -35,7 +35,7 @@ const Footer_Cont = () => {
           <p>
             <a href="https://iic.mic.gov.in/">MOE Innovation Cell</a><br />
             {/* Add the JOIN US button below */}
-            <button className="join_us_button" onClick={() => window.open("https://forms.gle/X4M4mea5xqXwwLRe6", "_blank")}>
+            <button className="join_us_button" onClick={() => window.open("https://forms.gle/S4aYHyTkFKuHZBZC9", "_blank")}>
               JOIN US
             </button>
           </p>

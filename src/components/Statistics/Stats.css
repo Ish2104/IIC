@@ -65,13 +65,14 @@ body, html {
 /* Individual Stat Item */
 .stat-item {
   background-color: rgba(99, 96, 96, 0.8); /* Dark background for readability */
-  padding: 40px;
+  padding: 60px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   position: relative;
   overflow: hidden; /* Prevent overflow from children */
+  height:110%;
 }
 
 .stat-item:hover {
@@ -111,7 +112,8 @@ body, html {
   padding: 5px 10px;
   font-size: 0.9rem;
   border-radius: 5px;
-  width: 80%;
+  width: 110%;
+  height: 30%;
 }
 
 .stat-item:hover .extra-info {

@@ -7,31 +7,31 @@ import "./Stats.css";
 const IICStatistics = () => {
   const stats = [
     {
-      title: "Startups Incubated",
+      title: "Events Conducted",
       value: 35,
       icon: faLightbulb,
-      info: "Supporting student and faculty-led startups.",
+      info: "Total number of events that have been organized, promoting innovation and entrepreneurship.",
       link: "/startups"
     },
     {
-      title: "Patents Filed",
+      title: "Students Impacted",
       value: 15,
       icon: faFileAlt,
-      info: "Innovative research resulting in patent filings.",
+      info: " Total number of students that have been positively impacted through these initiatives.",
       link: "/patents"
     },
     {
-      title: "Innovations Supported",
+      title: "Patent Filed",
       value: 50,
       icon: faFlask,
-      info: "Fostering creativity and innovative solutions.",
+      info: "Total patents that have been filed, reflecting the institution’s innovation efforts.",
       link: "/innovations"
     },
     {
-      title: "Collaborations",
+      title: " Students and Faculty Startups",
       value: 20,
       icon: faHandshake,
-      info: "Partnerships with industries and institutions.",
+      info: "Total startups that have been launched by both students and faculty, fostering a thriving entrepreneurial ecosystem.",
       link: "/collaborations"
     },
   ];

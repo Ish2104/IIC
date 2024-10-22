@@ -106,18 +106,34 @@
     color: #f94521;
 }
 
+
+/* New Row Styles for Two Rows */
+.ine-event-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ine-event-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    row-gap: 2rem;
+}
+
 /* Event Card Styles */
 .ine-event-card {
-    background-color:rgba(249, 171, 119, 0.932);
+    background-color: rgba(249, 171, 119, 0.932);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 90%; 
+    width: 30%; /* Adjust width to fit 3 cards per row */
     max-width: 280px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .ine-event-image-container {
@@ -158,9 +174,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-
 }
-
 
 
 .ine-btn {
@@ -189,6 +203,7 @@
     color: #d6d4d4;
 }
 
+/* Responsive Adjustments */
 @media screen and (max-width: 1024px) {
     .ine-events {
         padding: 1.5rem 1rem;
@@ -200,6 +215,7 @@
 
     .ine-event-card {
         max-width: 250px;
+        width: 30%;
     }
 
     .ine-event-info h3 {
@@ -214,6 +230,10 @@
         width: 30vh;
         margin-bottom: 8vh;
     }
+
+    .ine-event-row {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -227,6 +247,7 @@
 
     .ine-event-card {
         max-width: 200px;
+        width: 45%; /* Adjust width to fit 2 cards per row */
     }
 
     .ine-event-info h3 {
@@ -241,6 +262,10 @@
         width: 25vh;
         margin-bottom: 6vh;
     }
+
+    .ine-event-row {
+        justify-content: space-around;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -253,7 +278,8 @@
     }
 
     .ine-event-card {
-        width: 100%;
+        width: 100%; /* Stack the cards */
+        max-width: 100%;
     }
 
     .ine-event-info h3 {
@@ -268,7 +294,14 @@
         width: 20vh;
         margin-bottom: 4vh;
     }
+
+    .ine-event-row {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
+
+/* Adjust slick dots for mobile */
 @media screen and (max-width: 480px) {
     .slick-dots {
         bottom: -20px; /* Adjusted to move dots closer to the carousel */
@@ -290,15 +323,13 @@
 
 .slick-dots {
     text-align: center;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .slick-dots {
-      bottom: -20px; /* Adjust this value to control the vertical position of the dots */
-    
-      display: flex;
-      justify-content: center;
-      margin-left: 60px;
+        bottom: -20px;
+        display: flex;
+        justify-content: center;
+        margin-left: 60px;
     }
-  }
-  
+}

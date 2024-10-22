@@ -4,12 +4,17 @@ import Home1 from "../../assets/Home1.png";
 import Home2 from "../../assets/Home2.jpg";
 import Home3 from "../../assets/Home3.jpg";
 import Home4 from "../../assets/Home4.png";
+import Home5 from "../../assets/Home5.png";
 
 const images = [
   { src: Home1, link: "https://induction.iiitd.edu.in/" },
   { src: Home2, link: "https://iiitd.ac.in/academics/pcr" },
   { src: Home3, link: "https://iiitd.ac.in/vbc" },
   { src: Home4, link: "https://example.com/page3" },
+  {
+    src: Home5,
+    link: "https://www.ieee-ises.org/IEEE-iSES_2024_Website/index.html",
+  },
 ];
 
 const HeroSection = () => {
@@ -66,18 +71,22 @@ const HeroSection = () => {
       <div className={`title-div ${titleVisible ? "slide-in-left" : ""}`}>
         <h1>Institute Innovation Council (IIC)</h1>
       </div>
-      <div className={`description-div ${descriptionVisible ? "slide-in-right" : ""}`}>
+      <div
+        className={`description-div ${
+          descriptionVisible ? "slide-in-right" : ""
+        }`}
+      >
         <p>
-          The Institute Innovation Council (IIC) is dedicated to fostering a
-          vibrant culture of innovation and incubation among faculty and
-          students at IIIT-D. Our mission is to drive creativity and
-          entrepreneurial spirit, resulting in the establishment of successful
-          startups. These ventures, promoted and owned by our talented faculty
-          and students, showcase the innovative potential and collaborative
-          efforts within our community. By fostering collaboration and a
-          proactive mindset, the IIC is dedicated to making IIIT-D a hub of
-          innovation, where ideas are turned into reality, and the next
-          generation of entrepreneurs is born.
+          The Institute Innovation Council (IIC) is committed to nurturing a
+          dynamic culture of innovation and incubation among faculty and
+          students at IIIT-Delhi. Our mission is to ignite creativity and
+          entrepreneurial spirit, leading to the formation of successful
+          startups. These ventures, developed and led by our talented faculty
+          and students, highlight the innovative potential and collaborative
+          energy within our community. By promoting teamwork and a proactive
+          approach, the IIC aims to establish IIIT-Delhi as a vibrant hub of
+          innovation, where ideas are transformed into reality and the next
+          generation of entrepreneurs is empowered to thrive.
         </p>
       </div>
     </div>
