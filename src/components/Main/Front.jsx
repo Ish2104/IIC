@@ -7,7 +7,7 @@ import Home4 from "../../assets/Home4.png";
 import Home5 from "../../assets/Home5.png";
 
 const images = [
-  { src: Home1, link: "https://induction.iiitd.edu.in/" },
+  // { src: Home1, link: "https://induction.iiitd.edu.in/" },
   { src: Home2, link: "https://iiitd.ac.in/academics/pcr" },
   { src: Home3, link: "https://iiitd.ac.in/vbc" },
   { src: Home4, link: "https://example.com/page3" },

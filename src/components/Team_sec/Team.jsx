@@ -13,19 +13,19 @@ import mem8 from "../../images/gurusahai.jpg";
 import mem9 from "../../images/aman.png";
 
 
-const teamMembers = [
-  { name: "Dr. Pankaj Vajpayee", img: mem1, linkedin: "https://www.linkedin.com/in/pankaj-vajpayee-24ba511/" },
-  { name: "Dr. Deepika Bhaskar", img: mem2, linkedin: "https://www.linkedin.com/in/deepika-bhaskar-4b4007312/" },
-  { name: "Mr. Anupam Saronwala", img: mem3, linkedin: "https://www.linkedin.com/in/anupamsaronwala/" },
-  { name: "Dr. Anuj Grover", img: mem4, linkedin: "https://www.linkedin.com/in/anujgrover/" },
-  { name: "Dr. Pravesh Biyani", img: mem5, linkedin: "https://www.linkedin.com/in/praveshbiyani/" },
-  { name: "Dr. Jaspreet Kaur", img: mem6, linkedin: "" },
-  { name: "Twisha Kacker", img: mem7, linkedin: "https://www.linkedin.com/in/twisha-kacker-4a318424b/" },
-  { name: "Kumar Gurusahai", img: mem8, linkedin: "https://www.linkedin.com/in/kumar-gurusahai-075209241/" },
-  { name: "Aman Ranjan", img: mem9, linkedin: "https://www.linkedin.com/in/aman-ranjan-a8853320b/" }
-];
+// const teamMembers = [
+//   { name: "Dr. Pankaj Vajpayee", img: mem1, linkedin: "https://www.linkedin.com/in/pankaj-vajpayee-24ba511/" },
+//   { name: "Dr. Deepika Bhaskar", img: mem2, linkedin: "https://www.linkedin.com/in/deepika-bhaskar-4b4007312/" },
+//   { name: "Mr. Anupam Saronwala", img: mem3, linkedin: "https://www.linkedin.com/in/anupamsaronwala/" },
+//   { name: "Dr. Anuj Grover", img: mem4, linkedin: "https://www.linkedin.com/in/anujgrover/" },
+//   { name: "Dr. Pravesh Biyani", img: mem5, linkedin: "https://www.linkedin.com/in/praveshbiyani/" },
+//   { name: "Dr. Jaspreet Kaur", img: mem6, linkedin: "" },
+//   { name: "Twisha Kacker", img: mem7, linkedin: "https://www.linkedin.com/in/twisha-kacker-4a318424b/" },
+//   { name: "Kumar Gurusahai", img: mem8, linkedin: "https://www.linkedin.com/in/kumar-gurusahai-075209241/" },
+//   { name: "Aman Ranjan", img: mem9, linkedin: "https://www.linkedin.com/in/aman-ranjan-a8853320b/" }
+// ];
 
-const Team = () => {
+const Team = (props) => {
   const containerRef = useRef(null);
   const [scrolling, setScrolling] = useState(true);
   const [manualScroll, setManualScroll] = useState(false);
@@ -90,7 +90,7 @@ const Team = () => {
   return (
     <div className="team_main">
       <section className="team_section">
-        <h2>MEET OUR TEAM</h2>
+        <h2>MEET OUR {props.teamType} TEAM</h2>
         <div className="title_decorates"></div>
         <div className="team_grid_wrapper">
           <button className="scroll_button left" onClick={handleScrollLeft}>
@@ -102,7 +102,7 @@ const Team = () => {
             onMouseEnter={handleMouseEnter} 
             onMouseLeave={handleMouseLeave}
           >
-            {teamMembers.concat(teamMembers).map((member, index) => (
+            {props.teamMembers.concat(props.teamMembers).map((member, index) => (
               <div key={index} className="team_member">
                 <div className="team_image_container">
                   <img src={member.img} alt={member.name} className="team_image" />
