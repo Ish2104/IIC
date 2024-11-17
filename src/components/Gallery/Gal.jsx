@@ -182,16 +182,20 @@ const Gal = () => {
       </div>
 
       <div className="gallery-grid" ref={galleryRef}>
-        {filteredImages.map((image) => (
-          <div
-            key={image.id}
-            className="gallery-item"
-            onClick={() => openLightbox(image)}
-          >
-            <img src={image.src} alt={image.alt} className="gallery-img fade-in" loading="lazy" />
-          </div>
-        ))}
+  {filteredImages.map((image) => (
+    <div
+      key={image.id}
+      className="gallery-item"
+      onClick={() => openLightbox(image)}
+    >
+      <img src={image.src} alt={image.alt} className="gallery-img fade-in" loading="lazy" />
+      <div className="overlay">
+        <p className="overlay-text">Hovered Text</p>
       </div>
+    </div>
+  ))}
+</div>
+
 
       {selectedImage && (
         <div className="lightbox-overlay" onClick={handleLightboxClick} role="dialog" aria-modal="true" aria-labelledby="lightbox-title">

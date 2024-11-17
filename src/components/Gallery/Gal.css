@@ -7,6 +7,7 @@ body {
 }
 
 .gallery-container {
+  /* background-color: #000; */
   width: 90%;
   max-width: 1200px;
   margin: 60px auto; 
@@ -58,16 +59,15 @@ body {
   max-height: none; /* Removed max-height to avoid overflow */
   overflow-y: visible; /* Adjusted to visible */
 }
-
 .gallery-item {
   position: relative;
-  cursor: pointer; 
-  overflow: hidden; 
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .gallery-img {
   width: 100%;
-  height: auto; /* Ensure images maintain aspect ratio */
+  height: auto; 
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -91,7 +91,43 @@ body {
   }
 }
 
-/* Lightbox Styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.overlay-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none; 
+}
+
+.gallery-item:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 1; 
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .lightbox-overlay {
   position: fixed;
   top: 0;
