@@ -36,17 +36,8 @@ const teamMembers1 = [
   { name: "Dr. Anuj Grover", img: mem4, linkedin: "https://www.linkedin.com/in/anujgrover/" },
   { name: "Dr. Pravesh Biyani", img: mem5, linkedin: "https://www.linkedin.com/in/praveshbiyani/" },
   { name: "Dr. Jaspreet Kaur", img: mem6, linkedin: "" }
-  // { name: "Twisha Kacker", img: mem7, linkedin: "https://www.linkedin.com/in/twisha-kacker-4a318424b/" },
-  // { name: "Kumar Gurusahai", img: mem8, linkedin: "https://www.linkedin.com/in/kumar-gurusahai-075209241/" },
-  // { name: "Aman Ranjan", img: mem9, linkedin: "https://www.linkedin.com/in/aman-ranjan-a8853320b/" }
 ];
 const teamMembers2 = [
-  // { name: "Dr. Pankaj Vajpayee", img: mem1, linkedin: "https://www.linkedin.com/in/pankaj-vajpayee-24ba511/" },
-  // { name: "Dr. Deepika Bhaskar", img: mem2, linkedin: "https://www.linkedin.com/in/deepika-bhaskar-4b4007312/" },
-  // { name: "Mr. Anupam Saronwala", img: mem3, linkedin: "https://www.linkedin.com/in/anupamsaronwala/" },
-  // { name: "Dr. Anuj Grover", img: mem4, linkedin: "https://www.linkedin.com/in/anujgrover/" },
-  // { name: "Dr. Pravesh Biyani", img: mem5, linkedin: "https://www.linkedin.com/in/praveshbiyani/" },
-  // { name: "Dr. Jaspreet Kaur", img: mem6, linkedin: "" }
   { name: "Twisha Kacker", img: mem7, linkedin: "https://www.linkedin.com/in/twisha-kacker-4a318424b/" },
   { name: "Kumar Gurusahai", img: mem8, linkedin: "https://www.linkedin.com/in/kumar-gurusahai-075209241/" },
   { name: "Aman Ranjan", img: mem9, linkedin: "https://www.linkedin.com/in/aman-ranjan-a8853320b/" }
