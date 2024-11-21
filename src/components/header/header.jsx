@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './header.css'; 
 import { Link, animateScroll as scroll } from 'react-scroll';
-import iic_logo from "../../images/iiclogo_bew.png";
+import iic_logo from "../../images/IIC_finalLogo.png";
 import second_logo from "../../images/iiitd_img.png";
 import yukti_logo from "../../images/yukti.png";
 
