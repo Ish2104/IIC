@@ -115,9 +115,9 @@ const eventsData1 = [
 ];
 
 const eventsData2 = [
-  { id: 1, title: 'Uplift', date: '15th March 2024', image: uplift, pdf: '/documents/UPLIFT.pdf' },
+  { id: 1, title: 'Uplift', date: '11th November, 2024', image: uplift, pdf: '/documents/UPLIFT.pdf' },
   { id: 2, title: 'SnackChat', date: '23rd October, 2024', image: snackchat, pdf: '/documents/SNACKCHAT.pdf' },
-  { id: 3, title: 'Pitchers Episode-2', date: '16 March 2024', image: pitchers_ep_2, pdf: '/documents/PITCHERS2.pdf' },
+  { id: 3, title: 'Pitchers Episode-2', date: '8th November , 2024', image: pitchers_ep_2, pdf: '/documents/PITCHERS2.pdf' },
 ];
   return (
     <div className="App">
