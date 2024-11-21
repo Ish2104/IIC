@@ -45,6 +45,9 @@ import Afro from './images/Afro.png';
 import Wit from './images/Wit.png';
 import Micro from './images/Micro.png';
 import Cam from './images/Cam.png';
+import snackchat from './images/snackchat.png'
+import pitchers_ep_2 from './images/pitchers-ep-2.png'
+import uplift from './images/uplift.png'
 
 
 
@@ -112,10 +115,9 @@ const eventsData1 = [
 ];
 
 const eventsData2 = [
-  { id: 1, title: 'OnCoslice', date: '15th March 2024', image: OncosImage, pdf: '/documents/OnCoslice.pdf' },
-  { id: 2, title: 'Internship Fair', date: '15-16 March 2024', image: InternImage, pdf: '/documents/Internship.pdf' },
-  { id: 3, title: 'Design Panel', date: '16 March 2024', image: DesignImage, pdf: '/documents/Design.pdf' },
-  { id: 4, title: 'Design Hub Designathon', date: '16 March 2024', image: DesImage, pdf: '/documents/Designathon.pdf' }
+  { id: 1, title: 'Uplift', date: '15th March 2024', image: uplift, pdf: '/documents/UPLIFT.pdf' },
+  { id: 2, title: 'SnackChat', date: '23rd October, 2024', image: snackchat, pdf: '/documents/SNACKCHAT.pdf' },
+  { id: 3, title: 'Pitchers Episode-2', date: '16 March 2024', image: pitchers_ep_2, pdf: '/documents/PITCHERS2.pdf' },
 ];
   return (
     <div className="App">
